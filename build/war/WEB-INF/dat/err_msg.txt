@@ -1,0 +1,160 @@
+#
+# Error text for the User Filter
+#
+e100:
+<div class="err-msg">
+<h3>User Exists</h3>
+<p>The email address you supplied is already registered.
+</div>
+
+e101:
+<div class="err-msg">
+<h3>Invalid eMail Address</h3>
+<p>The eMail address you supplied does not appear to be valid.
+<br>Please correct it and re-try.
+</div>
+
+e102:
+<div class="err-msg">
+<h3>Invalid TROVE Key</h3>
+<p>The TROVE API key you supplied is invalid.
+<br>Please correct it and re-try.
+</div>
+
+e103:
+<div class="err-msg">
+<h3>Unknown User</h3>
+<p>The email address you entered is not a registered user.
+<p>Please check your spelling and try again, or go to the Registration option.
+</div>
+
+e104:
+<div class="err-msg">
+<h3>Unknown</h3>
+<p>This should not happen!
+<p>Please try again and if the error persists, report it to the Paper Miner Administrator.
+</div>
+
+e105:
+<div class="err-msg">
+<h3>Verification of eMail Address Failed</h3>
+<p>An error has prevented your eMail validation process from completing.
+<p>Please try again and if the error persists, report it to the Paper Miner Administrator.
+</div>
+
+e106:
+<div class="err-msg">
+<h3>Error Retrieving User Data</h3>
+<p>We encountered an error fetching your User data for updating.
+<p>Please try again and if the error persists, report it to the Paper Miner Administrator.
+</div>
+
+e107:
+<div class="err-msg">
+<h3>Update Failed</h3>
+<p>We encountered an error updating your User data.
+<p>Please try again and if the error persists, report it to the Paper Miner Administrator.
+</div>
+
+e108:
+<div class="err-msg">
+<h3>Internal Error Sending eMail</h3>
+<p>An error has prevented your validation eMail from being sent.
+<p>Please try again and if the error persists, report it to the Paper Miner Administrator.
+</div>
+
+e109:
+<div class="err-msg">
+<h3>Internal Error Sending eMail</h3>
+<p>An error has prevented your validation eMail from being sent.
+<p>Please try again and if the error persists, report it to the Paper Miner Administrator.
+</div>
+
+e110:
+<div class="err-msg">
+<h3>Internal Cookie Error</h3>
+<p>We can't find your Cookie!
+<p>Please log in again and re-try. If the error persists, report it to the Paper Miner Administrator.
+</div>
+
+e111:
+<div class="err-msg">
+<h3>Congratulations!</h3>
+<p>Your eMail address validation is complete.
+<p>You will now be able to use all of the Paper Miner options.
+</div>
+
+e112:
+<div class="err-msg">
+<h3>Unable to Save</h3>
+<p>This is a duplicate of existing saved query.
+</div>
+
+e113:
+<div class="err-msg">
+<h3>Quota Reached</h3>
+<p>You have reached the maximum permitted number of saved queries.
+<p>Delete an existing query, or email the Paper Miner Administrator to request an increase in your quota.
+</div>
+
+e114:
+<div class="err-msg">
+<h3>Internal Error</h3>
+<p>An internal server error occurred while processing your request.
+<p>Please report this incident with the date and time to the Paper Miner Administrator by email.
+</div>
+
+e115:
+<div class="err-msg">
+<h3>Delete Failed</h3>
+<p>We were unable to delete all the queries as requested.
+<p>Please report this incident with the date and time to the Paper Miner Administrator by email.
+</div>
+
+e200:
+<div class="err-msg">
+<h3>Internal Error</h3>
+<p>Fetch of publisher ID returned no data
+</div>
+
+e201:
+<div class="err-msg">
+<h3>Internal Error</h3>
+<p>A PaperMiner server error was detected while fetching publisher data.
+Please report this to the PaperMiner Administrator.
+</div>
+
+e301:
+<div class="err-msg">
+<h3>Internal Error</h3>
+<p>A PaperMiner server error was detected while fetching Locations for a TROVE reference.
+Please report this to the PaperMiner Administrator.
+</div>
+
+e302:
+<div class="err-msg">
+<h3>Internal Error</h3>
+<p>A PaperMiner server error was detected while fetching Location data.
+Please report this to the PaperMiner Administrator.
+</div>
+
+e303:
+<div class="err-msg">
+<h3>Unable to remove Location</h3>
+<p>PaperMiner was unable to delete (strikeout) the requested location.
+Please report this to the PaperMiner Administrator.
+</div>
+
+e304:
+<div class="err-msg">
+<h3>Internal Error</h3>
+<p>A PaperMiner server error was detected while updating Location strikeout data.
+Please report this to the PaperMiner Administrator.
+</div>
+
+
+#<div class="err-msg">
+#<h3>Unknown</h3>
+#<p>
+#</div>
+

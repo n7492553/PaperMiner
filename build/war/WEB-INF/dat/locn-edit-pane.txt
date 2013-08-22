@@ -1,0 +1,32 @@
+<h3>Location Edit</h3>
+
+<div class="edit-pane">
+ <table>
+  <tr>
+   <td>
+    <div id="record-text-container"></div>
+   </td>
+   <td>
+    <div id="location-list-container"></div>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <div id="location-ctl">
+     <table id="location-ctl-table">
+      <tr>
+       <td>
+        <div class="pm-button-bar">
+         <button id="led-pbx" onClick="returnToRaw()">Back to Raw Results</button>
+         &nbsp;&nbsp;&nbsp;&nbsp;
+         <button id="led-pb1" onClick="locnAdd()">Add Location</button>
+         <button id="led-pb2" onClick="locnDel()">Remove Location</button>
+        </div>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </td>
+  </tr>
+ </table> 
+    

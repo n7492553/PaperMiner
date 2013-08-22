@@ -1,0 +1,383 @@
+3	The Sydney Gazette	1803 -1842	-33.8674869	151.2069902	Sydney
+4	The Hobart Town Gazette and Southern Reporter	1816 -1821	-42.8819032	147.3238148	Hobart
+5	Hobart Town Gazette and Van Diemens Land Advertiser	1821-1825	-42.8819032	147.3238148	Hobart
+6	The Perth Gazette and Western Australian Journal	1833 -1847	-31.9530044	115.8574693	Perth
+7	The South Australian Advertiser	1858 -1889	-34.9286212	138.5999594	Adelaide
+8	The Maitland Mercury & Hunter River General Advertiser	1843-1893	-32.7336636	151.5576677	Maitland
+9	Northern Territory Times and Gazette (Darwin)	1873 -1927	-12.4628198	130.8417694	Darwin
+10	The Mercury (Hobart)	1860-1954	-42.8819032	147.3238148	Hobart
+11	The Canberra Times	1926-1954	-35.3082355	149.1242241	Canberra
+12	The Courier-Mail (Brisbane, Qld)	1933-1954	-27.4710107	153.0234489	Brisbane
+13	The Argus Melbourne	1848-1956	-37.814107	144.96328	Melbourne
+14	The Moreton Bay Courier (Brisbane, Qld)	1846-1861	-27.4710107	153.0234489	Brisbane
+15	The Courier (Brisbane)	1861-1864	-27.4710107	153.0234489	Brisbane
+16	Brisbane Courier	1864-1933	-27.4710107	153.0234489	Brisbane
+18	The Melbourne Argus	1846-1848	-37.814107	144.96328	Melbourne
+19	Hobart Town Courier	1827-1839	-42.8819032	147.3238148	Hobart
+20	The Hobart Town Courier and Van Diemens Land Gazette	1839-1840	-42.8819032	147.3238148	Hobart
+21	The Courier (Hobart)	1840-1859	-42.8819032	147.3238148	Hobart
+22	Hobart Town Gazette	1825-1827	-42.8819032	147.3238148	Hobart
+23	Colonial Times and Tasmanian Advertiser	1825 -1827	-42.8819032	147.3238148	Hobart
+24	Colonial Times Hobart	1828-1857	-42.8819032	147.3238148	Hobart
+25	Northern Standard (Darwin, NT)	1921-1955	-12.4628198	130.8417694	Darwin
+26	The Perth Gazette and Independent Journal of Politics and News	1848-1864	-31.9530044	115.8574693	Perth
+27	Australian times a political and literary journal	1863-1864	-31.9530044	115.8574693	Perth
+28	The Perth Gazette and  Australian Times	1864 -1874	-31.9530044	115.8574693	Perth
+29	The Western Australian times	1874-1879	-31.9530044	115.8574693	Perth
+30	The  Australian (Perth)	1879-1954	-31.9530044	115.8574693	Perth
+31	The Hobarton Mercury (Tas)	1854-1857	-42.8819032	147.3238148	Hobart
+32	The Hobart Town Mercury (Tas)	1857	-42.8819032	147.3238148	Hobart
+33	The Hobart Town Daily Mercury (Tas)	1858-1860	-42.8819032	147.3238148	Hobart
+34	The Advertiser (Adelaide)	1889-1931	-34.9286212	138.5999594	Adelaide
+35	Sydney Morning Herald	1842-1954	-33.8674869	151.2069902	Sydney
+36	Northern Territory Times (Darwin, NT)	1927-1932	-12.4628198	130.8417694	Darwin
+37	Sydney Herald	1831-1842	-33.8674869	151.2069902	Sydney
+38	The Sunday Herald (Sydney, NSW)	1949-1953	-33.8674869	151.2069902	Sydney
+39	The Sun-Herald (Sydney, NSW)	1953-1954	-33.8674869	151.2069902	Sydney
+40	South Australian Gazette and Colonial Register	1836-1839	-34.9286212	138.5999594	Adelaide
+41	Southern Australian Register	1839-1900	-34.9286212	138.5999594	Adelaide
+42	The Queenslander	1866-1939	-27.4710107	153.0234489	Brisbane
+43	Camperdown Chronicle (Vic)	1877-1954	-38.2339319	143.1496795	Camperdown
+44	The Advertiser (Adelaide)	1931-1954	-34.9286212	138.5999594	Adelaide
+45	Advertiser and Register (Adelaide, SA)	1931	-34.9286212	138.5999594	Adelaide
+46	Advocate (Burnie, Tas)	1890-1954	-41.0636111	145.8919444	Burnie
+47	Army News (Darwin, NT)	1941-1946	-12.4628198	130.8417694	Darwin
+48	The Australasian Chronicle	1839-1843	-33.8674869	151.2069902	Sydney
+49	The Australasian sketcher with pen and pencil	1873-1889	-37.814107	144.96328	Melbourne
+50	The Australian	1824-1848	-33.8674869	151.2069902	Sydney
+51	The Australian Abo Call	1938	-33.8674869	151.2069902	Sydney
+52	The Australian town and country journal	1870-1907	-33.8674869	151.2069902	Sydney
+53	Barrier Miner Broken Hill	1888-1954	-19.4004993	146.8343777	Broken Hill
+54	Bathurst Advocate	1848-1849	-33.422241	149.574826	Bathurst
+55	The Bathurst free press	1849-1851	-33.422241	149.574826	Bathurst
+56	Bathurst Free Press and Mining Journal (NSW)	1851-1904	-33.422241	149.574826	Bathurst
+57	Bell's life in Sydney and sporting chronicle	1860-1870	-33.8674869	151.2069902	Sydney
+58	Bells Life in Sydney and Sporting Reviewer	1845-1860	-33.8674869	151.2069902	Sydney
+59	Burra Record (SA)	1878-1954	-33.6827177	138.9379596	Burra
+60	Cairns post	1884-1893	-16.923978	145.77086	Cairns
+61	Cairns Post	1909-1954	-16.923978	145.77086	Cairns
+62	The Cairns morning post	1907-1909	-16.923978	145.77086	Cairns
+63	Centralian Advocate (Alice Springs, NT)	1947-1954	-23.801785	133.903112	Alice Springs
+64	Clarence and Richmond Examiner (Grafton)	1889 -1915	-29.694053	152.934549	Grafton
+65	Clarence and Richmond Examiner and New England Advertiser (Grafton)	1859-1889	-29.694053	152.934549	Grafton
+66	The ColonistSydney	1835-1840	-33.8674869	151.2069902	Sydney
+67	Empire (Sydney)	1850-1875	-33.8674869	151.2069902	Sydney
+68	Examiner (Launceston)	1900-1954	-41.4370868	147.1393767	Launceston
+69	Federal Capital Pioneer	1924-1926	-35.3082355	149.1242241	Canberra
+70	Illustrated Australian News (Melbourne, Vic)	1876 -1889	-37.814107	144.96328	Melbourne
+71	The Illustrated Australian news (Melbourne)	1890 -1896	-37.814107	144.96328	Melbourne
+72	Illustrated Australian News for Home Readers (Melbourne, Vic)	1867-1875	-37.814107	144.96328	Melbourne
+73	Kalgoorlie Western Argus (WA)	1896-1916	-30.7470155	121.4748548	Karlgoorlie
+74	Launceston Examiner	1842-1899	-41.4370868	147.1393767	Launceston
+75	The Mail (Adelaide, SA)	1912-1954	-34.9286212	138.5999594	Adelaide
+76	The MonitorSydney	1826-1828	-33.8674869	151.2069902	Sydney
+77	Rockhampton Morning Bulletin	1878-1954	-23.3776546	150.5099759	Rockhampton
+78	Morning Chronicle Sydney	1843-1846	-33.8674869	151.2069902	Sydney
+79	Morning Post (Cairns)	1897-1907	-16.923978	145.77086	Cairns
+80	North Australian (Darwin, NT)	1883-1889	-12.4628198	130.8417694	Darwin
+81	Northern Star (Lismore)	1876-1954	-28.8166667	153.2833333	Lismore
+82	The Northern Territory news (Darwin)	1952-1954	-12.4628198	130.8417694	Darwin
+83	The Queanbeyan age and general advertiser	1864-1867	-35.3549182	149.2312511	Queanbeyan
+84	Queanbeyan Age (NSW)	1867-1904	-35.3549182	149.2312511	Queanbeyan
+86	Queanbeyan Age (NSW)	1907-1915	-35.3549182	149.2312511	Queanbeyan
+87	The Queanbeyan age and the Queanbeyan observer	1915-1927	-35.3549182	149.2312511	Queanbeyan
+88	The Queanbeyan age	1927-1954	-35.3549182	149.2312511	Queanbeyan
+89	The Register (Adelaide)	1901-1929	-34.9286212	138.5999594	Adelaide
+90	The Register News-Pictorial (Adelaide, SA)	1929-1931	-34.9286212	138.5999594	Adelaide
+91	Rockhampton Bulletin (Qld)	1871-1878	-23.3776546	150.5099759	Rockhampton
+92	The Rockhampton bulletin and central Queensland advertiser	1861-1871	-23.3776546	150.5099759	Rockhampton
+93	Sunday Times Perth	1902-1954	-31.9530044	115.8574693	Perth
+94	Sydney Chronicle	1846-1848	-33.8674869	151.2069902	Sydney
+95	Sydney Monitor	1828-1838	-33.8674869	151.2069902	Sydney
+96	Sydney Monitor & Commercial Advertiser	1838 -1841	-33.8674869	151.2069902	Sydney
+97	Townsville Daily Bulletin	1885-1954	-19.258102	146.818334	Townsville
+98	Australian Sunday Times (Perth, WA)	1897-1902	-31.9530044	115.8574693	Perth
+99	Western Argus (Kalgoorlie, WA)	1894-1896	-30.7470155	121.4748548	Kalgoorlie
+100	Western Argus (Kalgoorlie, WA)	1916-1938	-30.7470155	121.4748548	Kalgoorlie
+101	Western Mail (Perth)	1885-1954	-31.9530044	115.8574693	Perth
+102	Longreach Leader	1923-1954	-23.4406575	144.2510561	Longreach
+103	The Australian news for home readers (Melbourne)	1864-1867	-37.814107	144.96328	Melbourne
+104	Clarence and Richmond Examiner (Grafton, NSW)	1859	-29.694053	152.934549	Grafton
+105	Illustrated Australian News and Musical Times (Melbourne, Vic)	1889-1890	-37.814107	144.96328	Melbourne
+106	Nambour Chronicle	1922 -1954	-26.6293532	152.9593597	Nambour
+107	Illustrated Sydney News (NSW)	1853-1872	-33.8674869	151.2069902	Sydney
+108	Gippsland Times (Vic)	1861-1954	-38.2667025	146.741207	Gippsland
+109	Portland Guardian (Vic)	1876-1953	-38.3463453	141.6042096	Portland
+110	Portland Guardian and Normanby General Advertiser (Vic)	1842- 1876	-38.3463453	141.6042096	Portland
+111	The North Australian and Northern Territory Government Gazette (Darwin, NT)	1889-1890	-12.4628198	130.8417694	Darwin
+112	The Australian Women's Weekly	1933-1982	-33.8674869	151.2069902	Sydney
+113	The Age (Queanbeyan, NSW)	1904-1907	-35.3549182	149.2312511	Queanbeyan
+114	Braidwood Independent	1867	-35.4459966	149.7990438	Braidwood
+115	The North Western Advocate and the Emu Bay Times (Tas)	1899 -1919	-41.0636111	145.8919444	Burnie
+116	Emu Bay Times and North  and  Coast Advocate (Tas)	1897-1899	-41.0636111	145.8919444	Burnie
+117	Wellington Times and Agricultural and Mining Gazette (Tas)	1890-1897	-41.0636111	145.8919444	Burnie
+118	Moonta Herald and Northern Territory Gazette (NT)	1869	-12.4628198	130.8417694	Darwin
+119	Queanbeyan-Canberra Advocate (NSW)	1905-1927	-35.3549182	149.2312511	Queanbeyan
+120	Liverpool Herald (NSW)	1897-1907	-33.8674869	151.2069902	Sydney
+121	The Australian Children's Newspaper (NSW)	1899-1900	-33.8674869	151.2069902	Sydney
+122	Mercury (Fitzroy, Vic)	1875-1877	-37.7987007	144.9786869	Fitzroy
+123	Mercury and Weekly Courier (Vic)	1878-1903	-37.7987007	144.9786869	Fitzroy
+124	Yea Chronicle (Yea, Vic)	1891-1920	-37.2123519	145.4241168	Yea
+125	Kilmore Free Press and Bourke and Dalhousie Advertiser (Kilmore, Vic)	1865	-37.2928685	144.9512582	Kilmore
+126	Kilmore Free Press and Counties of Bourke and Dalhousie Advertiser(Kilmore, Vic)	1865-1868	-37.2928685	144.9512582	Kilmore
+127	Kilmore Free Press (Kilmore, Vic)	1870-1954	-37.2928685	144.9512582	Kilmore
+128	The Broadford Courier and Reedy Creek Times (Broadford, Vic)	1891	-37.2031018	145.0515541	Broadford
+129	The Broadford Courier (Broadford, Vic)	1891-1893	-37.2031018	145.0515541	Broadford
+130	The Broadford Courier and Reedy Creek Times (Broadford, Vic)	1893-1916	-37.2031018	145.0515541	Broadford
+131	The Broadford Courier (Broadford, Vic)	1916-1920	-37.2031018	145.0515541	Broadford
+132	Morwell Advertiser and Weekly Chronicle (Morwell, Vic.)	1887 -1888	-38.2345742	146.3947107	Morwell
+133	Morwell Advertiser (Morwell, Vic)	1888-1954	-38.2345742	146.3947107	Morwell
+134	Traralgon Record and Morwell, Mirboo,Toongabbie, Heyfield,Tyers and Callignee Advertiser (Traralgon, Vic)	1883-1886	-38.195534	146.537779	Traralgon
+135	Traralgon Record (Traralgon, Vic)	1886-1932	-38.195534	146.537779	Traralgon
+136	Gippsland Gazette (Warragul, Vic)	1898-1930	-38.1611548	145.9318239	Warragul
+137	Warragul Guardian and Buln Buln and Narracan Shire Advocate (Warragul, Vic)	1879-1894	-38.1611548	145.9318239	Warragul
+138	Warragul Guardian and  Gippsland Advertiser (Warragul, Vic)	1894	-38.1611548	145.9318239	Warragul
+139	Warragul Guardian (Warragul, Vic)	1895-1900	-38.1611548	145.9318239	Warragul
+140	Healesville Guardian (Vic)	1893-1898	-37.6538286	145.5170063	Healesville
+141	Healesville Guardian and Yarra Glen Advocate (Vic)	1898	-37.6538286	145.5170063	Healesville
+142	Healesville Guardian and Yarra Glen Guardian (Vic)	1898 -1900	-37.6538286	145.5170063	Healesville
+143	Healesville and Yarra Glen Guardian (Vic)	1900-1942	-37.6538286	145.5170063	Healesville
+144	Healesville Guardian (Lilydale, Vic)	1942-1954	-37.757549	145.350281	Lilydale
+145	Evelyn Observer, and South and East Bourke Record (Vic)	1882- 1902	-37.6419345	145.2394773	Kangaroo Ground
+146	Evelyn Observer and Bourke East Record (Vic)	1902 -1917	-37.6419345	145.2394773	Kangaroo Ground
+147	Eltham and Whittlesea Shires Advertiser and Diamond Creek Valley Advocate (Vic)	1917-1922	-37.7133771	145.1489162	Eltham
+148	Advertiser (Hurstbridge, Vic)	1922-1939	-37.6389918	145.1932903	Hurstbridge
+149	Eltham and Whittlesea Shires Advertiser (Vic. : 1940-1942)	1940 -1942	-37.7133771	145.1489162	Eltham
+150	South Bourke Standard (Vic. : 1861-1873)	1861-1873	-30.0901088	145.9375458	Bourke
+151	North Melbourne Advertiser (Vic)	1873-1894	-37.814107	144.96328	Melbourne
+152	Fitzroy City Press (Vic)	1881-1920	-37.7987007	144.9786869	Fitzroy
+153	Alexandra Times (Vic)	1868-1877	-37.1911428	145.7115967	Alexandra
+154	Alexandra and Yea Standard, Thornton, Gobur and Acheron Express (Vic. : 1877)	1877	-37.1911428	145.7115967	Alexandra
+155	Alexandra and Yea Standard, Gobur, Thornton and Acheron Express (Vic)	1877-1908	-37.1911428	145.7115967	Alexandra
+156	Alexandra and Yea Standard and Yarck, Gobur, Thornton and Acheron Express (Vic)	1908-1949	-37.1911428	145.7115967	Alexandra
+157	Alexandra Standard and Yarck, Gobur, Thornton, Taggerty and Acheron Express (Vic)	1949-1954	-37.1911428	145.7115967	Alexandra
+158	The Leven Lever (Ulversone, Tas. : 1919-1920)	1919-1920	-41.1573911	146.1720764	Ulverstone
+159	Deloraine and bury Advertiser (Tas)	1910-1912	-41.5247481	146.658808	Deloraine
+160	The Observer (Hobart, Tas : 1845-1846)	1845-1846	-42.8819032	147.3238148	Hobart
+161	The Australian Band of Hope Review, and Children's Friend (Sydney, NSW : 1856)	1856	-33.8674869	151.2069902	Sydney
+162	Australian band of hope journal	1857 -1857	-33.8674869	151.2069902	Sydney
+163	The Band of Hope Journal and Australian Home Companion (Sydney, NSW : 1858)	1858	-33.8674869	151.2069902	Sydney
+164	The Australian Home Companion and Band of Hope Journal (Sydney, NSW : 1859-1861)	1859-1861	-33.8674869	151.2069902	Sydney
+165	Canberra Illustrated	1925	-35.3082355	149.1242241	Canberra
+166	Canberra Community News	1925-1927	-35.3082355	149.1242241	Canberra
+167	Federal Capital Pioneer Magazine	1926 -1927	-35.3082355	149.1242241	Canberra
+168	Malvern and Caulfield Standard (Vic. : 1906)	1906	-37.851524	144.993484	Prahran
+169	Malvern Standard (Vic)	1906-1931	-33.8674869	151.2069902	Sydney
+170	Cornwall Chronicle Launceston	1835-1880	-41.4370868	147.1393767	Launceston
+171	Southern Australian Adelaide	1838-1844	-34.9286212	138.5999594	Adelaide
+172	South Australian	1844-1851	-34.9286212	138.5999594	Adelaide
+173	Geraldton Guardian (WA)	1906-1928	-28.7791667	114.6144444	Geraldton
+174	Adelaide Morning Chronicle	1852-1853	-34.9286212	138.5999594	Adelaide
+175	Albany Advertiser (WA)	1897-1950	-35.021702	117.881104	Albany
+176	Hawkesbury Advocate (Windsor, NSW : 1899-1900)	1899-1900	-27.4368363	153.0310899	Windsor
+177	Hawkesbury Chronicle and Farmers Advocate (Windsor, NSW : 1881-1888)	1881- 1888	-27.4368363	153.0310899	Windsor
+178	Hawkesbury Courier and Agricultural and General Advertiser	1844-1846	-27.4368363	153.0310899	Windsor
+179	Hawkesbury Herald (Windsor)	1902-1945	-27.4368363	153.0310899	Windsor
+180	The Inquirer & Commercial News (Perth, WA)	1855 -1901	-31.9530044	115.8574693	Perth
+181	Inquirer (Perth)	1840-1855	-31.9530044	115.8574693	Perth
+182	The Leader (Liverpool, NSW)	1946-1949	-33.9200192	150.9241267	Liverpool
+183	Liverpool News (NSW)	1937-1941	-33.9200192	150.9241267	Liverpool
+184	The Australian, Windsor, Richmond, and Hawkesbury Advertiser (NSW)	1873-1899	-27.4368363	153.0310899	Windsor
+185	The Ballarat Star (Vic. : 1865)	1865	-37.5621071	143.8561493	Ballarat
+186	The Capricornian	1875-1929	-23.3776546	150.5099759	Rockhampton
+187	The Central Queensland Herald	1930 -1956	-23.3776546	150.5099759	Rockhampton
+188	The Dubbo Liberal and Macquarie Advocate (NSW)	1892 -1927	-32.249496	148.604802	Dubbo
+189	The Star (Ballarat)	1855-1864	-37.5621071	143.8561493	Ballarat
+190	Windsor Express and Richmond Advertiser (NSW : 1843-1844)	1843 -1844	-27.4368363	153.0310899	Windsor
+191	The Worker Brisbane	1890-1955	-27.4710107	153.0234489	Brisbane
+192	Windsor and Richmond Gazette (NSW)	1888-1954	-27.4368363	153.0310899	Windsor
+193	Williamstown Chronicle (Vic)	1856-1954	-37.8572918	144.8977593	Williamstown
+194	The Caulfield and Elsternwick Leader (North Brighton, VIC)	1888-1902	-37.8829136	145.0228199	Caulfield
+195	Kerang Times and Swan Hill Gazette (Vic)	1877-1889	-35.7339959	143.9203427	Kerang
+196	Kyabram Union (Vic)	1886-1894	-36.3135222	145.0477249	Kyabram
+197	The Kyabram Union and Rodney Shire Advocate (Vic)	1894 -1894	-36.3135222	145.0477249	Kyabram
+198	The Elsternwick Leader and District Record (Brighton, Vic. : 1887-1888)	1887-1888	-37.884819	145.004776	Elsternwick
+199	The Elsternwick Leader (Brighton, Vic. : 1888)	1888	-37.884819	145.004776	Elsternwick
+200	The Elsternwick Leader and Caulfield and Balaclava Guardian (Brighton, Vic. : 1887)	1887	-37.884819	145.004776	Elsternwick
+201	Elsternwick leader and East Brighton, South Brighton, Cheltenham, Mentone, Mordialloc, Oakleigh, Sandringham, Balaclava & Caulfield record	1887	-37.884819	145.004776	Elsternwick
+202	Sunbury News (Vic. : 1900-1910)	1900-1910	-37.5794919	144.7288981	Sunbury
+203	Sunbury News and Bulla and Melton Advertiser (Vic. : 1892-1900)	1892 -1900	-37.5794919	144.7288981	Sunbury
+204	Wodonga and Towong Sentinel (Vic. : 1885-1954)	1885-1954	-36.127668	146.885697	Wodonga
+205	Mornington Standard (Vic. : 1889-1908)	1889-1908	-38.2199828	145.0389461	Mornington
+206	Mornington and Dromana Standard (Vic. : 1908-1911)	1908-1911	-38.2199828	145.0389461	Mornington
+207	The Coburg Leader (Vic. : 1890-1913)	1890-1913	-37.7416639	144.9628062	Coburg
+208	South Bourke and Mornington Journal (Richmond, Vic. : 1872-1920)	1872 -1920	-30.0901088	145.9375458	Bourke
+209	The Maffra Spectator (Vic. : 1882-1920)	1882-1920	-37.966394	146.9767261	Maffra
+210	Mornington Standard (Frankston, Vic. : 1911-1920)	1911-1920	-38.2199828	145.0389461	Mornington
+211	The Kerang Times (Vic. : 1889-1890)	1889-1890	-35.7339959	143.9203427	Kerang
+212	Sunbury News (Vic. : 1892)	1892	-37.5794919	144.7288981	Sunbury
+213	Williamstown Trade Circular (Vic. : 1856)	1856	-37.8572918	144.8977593	Williamstown
+214	Oakleigh Leader and District Record (Brighton, Vic. : 1887-1888)	1887 -1888	-37.89846	145.088379	Oakleigh
+215	Oakleigh Leader (North Brighton, Vic. : 1888-1902)	1888-1902	-37.89846	145.088379	Oakleigh
+216	Benalla Ensign (Vic. : 1938-1954)	1938-1954	-36.5514956	145.9817019	Benalla
+217	Euroa Advertiser and Violet Town, Longwood, Avenel, Strathbogie, Balmattam and Miepoll Gazette (Vic. : 1884)	1884	-36.7508652	145.5706696	Euroa
+218	Euroa Advertiser (Vic. : 1884-1920)	1884-1920	-36.7508652	145.5706696	Euroa
+220	Geraldton Guardian and Express (WA : 1929-1947)	1929-1947	-28.7791667	114.6144444	Geraldton
+221	Geraldton Guardian (WA : 1948-1950)	1948-1950	-28.7791667	114.6144444	Geraldton
+222	The North Eastern Ensign (Benalla, VIC. : 1872-1938)	1872-1938	-36.5514956	145.9817019	Benalla
+223	The Benalla Ensign and Farmer's and Squatter's Journal (Vic. : 1869-1872	1869-1872	-36.5514956	145.9817019	Benalla
+224	The Castlereagh (Gilgandra, NSW : 1905-1907)	1905-1907	-31.7108933	148.6694654	Gilgandra
+225	The Horsham Times (Vic. : 1882-1954)	1882-1954	-36.7131358	142.1999045	Horsham
+227	Warrnambool Standard (Vic. : 1914-1918)	1914-1918	-38.38	142.48	Warrnambool
+228	The Mildura Cultivator (Vic. : 1888-1920)	1888-1920	-34.2063006	142.1358321	Mildura
+229	The Ararat advertiser (Vic. : 1914-1918)	1914-1918	-37.2822621	142.9299786	Ararat
+230	Queenscliff Sentinel, Drysdale, Portarlington & Sorrento Advertiser (Vic. : 1885-1894)	1885-1894	-38.2674447	144.6614503	Queenscliff
+231	Independent (Footscray, Vic. : 1883-1922)	1883-1922	-37.799736	144.899734	Footscray
+232	The Ballarat Courier (Vic. : 1914-1918)	1914-1918	-37.5621071	143.8561493	Ballarat
+233	Frankston Standard (Frankston, Vic. : 1949)	1949	-38.1413993	145.1224639	Frankston
+234	Queenscliff Sentinel, Drysdale, St. Leonards, Sorrento, Portsea, Portarlington, Point Lonsdale and Bellarineshire Advertiser (Vic)	1882	-38.2674447	144.6614503	Queenscliff
+235	The Queenscliff Sentinel (Vic. : 1884-1885)	1884-1885	-38.2674447	144.6614503	Queenscliff
+236	Frankston & Somerville Standard (Vic. : 1921-1939)	1921-1939	-38.1413993	145.1224639	Frankston
+237	Standard (Frankston, Vic. : 1939-1949)	1939-1949	-38.1413993	145.1224639	Frankston
+238	Werribee Shire Banner (Vic. : 1911-1952)	1911-1952	-37.9029061	144.6584747	Werribee
+239	The McIvor Times and Rodney Advertiser (Heathcote, Vic. : 1863-1918)	1863- 1918	-36.9173416	144.7037298	Heathcote
+240	Bairnsdale Advertiser and Tambo and Omeo Chronicle (Vic. : 1882-1918)	1882- 1918	-37.8245772	147.6317185	Bainsdale
+241	The Colac Herald (Vic. : 1875-1918)	1875-1918	-38.3400445	143.5844382	Colac
+242	The Essendon Gazette and Keilor, Bulla and Broadmeadows Reporter (Moonee Ponds, Vic. : 1914-1918)	1914-1918	-37.755337	144.917282	Essendon
+243	Lilydale Express and Yarra Glen, Wandin Yallock, Upper Yarra, Healesville and Ringwood Chronicle (Vic. : 1914)	1914	-37.757549	145.350281	Lilydale
+244	Reporter (Box Hill, Vic. : 1889-1918)	1889-1918	-31.8807662	115.8929798	Box Hill
+245	Brighton Southern Cross (Vic. : 1914-1918)	1914-1918	-37.9056598	145.0043117	Brighton
+246	The Bacchus Marsh Express (Vic. : 1866-1918)	1866-1918	-35.3768784	149.0541349	Bacchus Mark
+247	The Prahran Telegraph (Vic. : 1889, 1914-1918)	1889, 1914-1918	-37.851524	144.993484	Prahran
+248	Record (Emerald Hill, Vic : 1914-1918)	1914-1918	-23.5260032	148.1622346	Emerald Hill
+249	The Casterton News and the Merino and Sandford Record (Vic. : 1914-1918)	1914-1918	-37.5845678	141.4052329	Casterton
+250	The Lilydale Express (Vic. : 1914-1918)	1914-1918	-37.757549	145.350281	Lilydale
+251	Sunshine Advocate (Vic. : 1924-1954)	1924-1954	-37.786461	144.83194	Sunshine
+252	The Dawn (Sydney, NSW : 1888-1905)	1888-1905	-33.8674869	151.2069902	Sydney
+253	Mirror (Perth, WA : 1921-1956)	1921-1956	-31.9530044	115.8574693	Perth
+254	Northern Times (Carnarvon, WA : 1905-1952)	1905-1952	-24.8826946	113.6570204	Carnarvon
+255	The Sunday Mirror (Perth, WA : 1920-1921)	1920-1921	-31.9530044	115.8574693	Perth
+256	The Biz (Fairfield, NSW : 1928-1954)	1928-1954	-33.8674869	151.2069902	Sydney
+257	The Darling Downs Gazette and General Advertiser (Toowoomba, Qld. : 1858-1880)	1858-1880	-27.56	151.951	Toowoomba
+258	The Northern Miner Charters Towers	1874-1954	-20.046667	146.26917	Charters Towers
+259	Warwick Examiner and Times (St. Lucia, Qld. : 1867-1919)	1867-1919	-28.2143733	152.0351449	Warwick
+260	Warwick Argus and Tenterfield Chronicle (St. Lucia, Qld. : 1866-1879)	1866 -1879	-28.2143733	152.0351449	Warwick
+261	Warwick Argus (St. Lucia, Qld. : 1879-1901)	1879-1901	-28.2143733	152.0351449	Warwick
+262	The North Australian, Ipswich and General Advertiser (Ipswich, Qld. : 1856-1862)	1856-1862	-27.6140934	152.7584716	Ipswich
+263	North Australian and Queensland General Advertiser (Ipswich, Qld. : 1862-1863)	1862-1863	-27.6140934	152.7584716	Ipswich
+264	The North Australian (Brisbane, Qld. : 1863-1865)	1863-1865	-27.6140934	152.7584716	Ipswich
+265	The Western Champion (Blackall)	1879-1891	-24.4243418	145.4660431	Blackall
+266	The Western Champion and General Advertiser for the Central-Western Districts (Barcaldine, Qld. : 1892-1922)	1892-1922	-23.5524673	145.2885214	Barcaldine
+267	The Western Champion (Barcaldine, Qld. : 1922-1937)	1922-1937	-23.5524673	145.2885214	Barcaldine
+268	The Northern Mining Register (Charters Towers, Qld. : 1891-1892)	1891 -1892	-20.046667	146.26917	Charters Towers
+269	The North Queensland Register (Townsville, Qld. : 1892-1905)	1892 -1905	-20.046667	146.26917	Charters Towers
+270	Zeehan and Dundas Herald (Tas. : 1890-1922)	1890-1922	-41.8823595	145.3352679	Zeehan
+271	The Clipper (Hobart, Tas. : 1893-1909)	1893-1909	-42.8819032	147.3238148	Hobart
+272	Launceston Advertiser (Tas. : 1829-1846)	1829-1846	-41.4370868	147.1393767	Launceston
+273	Tasmanian and Port Dalrymple Advertiser (Launceston, Tas. : 1825)	1825	-41.4370868	147.1393767	Launceston
+274	The Charleville Times (Brisbane, Qld. : 1896-1954)	1896-1954	-26.4013454	146.2396525	Charleville
+275	The Daily News (Perth, WA : 1882-1950)	1882-1950	-31.9530044	115.8574693	Perth
+276	Border Watch (Mount Gambier, SA : 1861-1954)	1861-1954	-37.814107	144.96328	Melbourne
+277	Adelaider Deutsche Zeitung (SA : 1851-1862)	1851-1862	-34.9286212	138.5999594	Adelaide
+278	Sd Australische Zeitung (Tanunda and Adelaide, SA : 1860-1874)	1860-1874	-34.5234581	138.9615097	Tanunda
+279	Il Giornale Italiano (Sydney, NSW : 1932-1940)	1932-1940	-33.8674869	151.2069902	Sydney
+280	Meie Kodu = Our Home (Sydney, NSW : 1949-1954)	1949-1954	-33.8674869	151.2069902	Sydney
+281	Singleton Argus (NSW : 1880-1954)	1880-1954	-32.5666667	151.1666667	Singleton
+282	The Singleton Argus and Upper Hunter General Advocate (NSW : 1874-1880)	1874-1880	-32.5666667	151.1666667	Singleton
+283	Geelong Advertiser and Intelligencer (Vic. : 1851-1856)	1851-1856	-38.1485437	144.3613479	Geelong
+284	Geelong Advertiser (Vic. : 1847-1851)	1847-1851	-38.1485437	144.3613479	Geelong
+285	Geelong Advertiser and Squatters' Advocate (Vic. : 1845-1847)	1845 -1847	-38.1485437	144.3613479	Geelong
+286	Chronicle and North Coast Advertiser (Qld. : 1903-1922)	1903-1922	-26.6293532	152.9593597	Nambour
+287	South Australian Weekly Chronicle (Adelaide, SA : 1858-1867)	1858 -1867	-34.9286212	138.5999594	Adelaide
+288	South Australian Chronicle and Weekly Mail (Adelaide, SA : 1868-1881)	1868- 1881	-34.9286212	138.5999594	Adelaide
+289	South Australian Weekly Chronicle (Adelaide, SA : 1881-1889)	1881 -1889	-34.9286212	138.5999594	Adelaide
+290	South Australian Chronicle (Adelaide, SA : 1889-1895)	1889-1895	-34.9286212	138.5999594	Adelaide
+291	Chronicle (Adelaide, SA : 1895-1954)	1895-1954	-34.9286212	138.5999594	Adelaide
+292	Geelong Advertiser (Vic. : 1840-1845)	1840-1845	-38.1485437	144.3613479	Geelong
+293	Brunswick & Coburg leader (Vic. : 1914-1918)	1914-1918	-37.767872	144.961929	Brunswick
+294	Broadmeadows Camp Sentry (Vic. : 1917)	1917	-37.6832693	144.9199591	Broadmeadows
+295	Advertiser (Footscray, Vic. : 1914-1918)	1914-1918	-37.799736	144.899734	Footscray
+296	Gippsland Farmers Journal (Traralgon, Vic. : 1914-1918)	1914-1918	-38.195534	146.537779	Traralogon
+297	Kerang New Times (Vic. : 1914-1918)	1914-1918	-35.7339959	143.9203427	Kerang
+298	Portland Observer and Normanby Advertiser (Vic. : 1914-1918)	1914 -1918	-38.3463453	141.6042096	Portland
+299	St Arnaud Mercury (Vic. : 1914-1918)	1914-1918	-36.61762	143.259688	St Arnaud
+300	Swan Hill Guardian and Lake Boga Advocate (Vic. : 1914-1918)	1914 -1918	-35.3754724	143.5327869	Swan Hill
+301	Wangaratta Chronicle (Vic. : 1914-1918)	1914-1918	-36.3543294	146.3256568	Wangaratta
+302	Williamstown Advertiser (Vic. : 1914-1918)	1914-1918	-37.8572918	144.8977593	Williamstown
+303	Flemington Spectator (Vic. : 1914-1918)	1914-1918	-37.788132	144.931183	Flemington
+304	Oakleigh and Caulfield Times Mulgrave and Ferntree Gully Guardian (Vic. : 1914-1918)	1914-1918	-37.89846	145.088379	Oakleigh
+305	Ouyen Mail (Vic. : 1915-1918)	1915-1918	-35.0706191	142.3149438	Ouyen
+306	Ouyen Mail and Central Mallee Advertiser (Vic. : 1914-1915)	1914 -1915	-35.0706191	142.3149438	Ouyen
+307	Port Fairy Gazette (Vic. : 1914-1918)	1914-1918	-38.383398	142.238552	Port Fairy
+308	Port Melbourne Standard (Vic. : 1914-1918)	1914-1918	-37.814107	144.96328	Port Melbourne
+309	Prahran Chronicle (Vic. : 1914-1918)	1914-1918	-37.851524	144.993484	Prahran
+310	Richmond Guardian (Vic. : 1917-1918)	1917-1918	-37.818635	145.0014704	Richmond
+311	Riverine Herald : Echuca and Moama Advertiser (Echuca, Vic. ; Moama, NSW : 1914-1918)	1914-1918	-36.1277236	144.7494973	Echuca
+312	Dandenong Advertiser and Cranbourne, Berwick and Oakleigh Advocate (Vic. : 1914-1918)	1914-1918	-37.9874598	145.2148612	Dandenong
+313	Queenscliff Sentinel, Drysdale, Portarlington, Sorrento Advertiser (Vic. : 1914-1918)	1914-1918	-38.2674447	144.6614503	Queenscliff
+314	Suedaustralische Zeitung (Adelaide, SA : 1850-1851)	1850-1851	-34.9286212	138.5999594	Adelaide
+315	Bendigonian (Bendigo, Vic. : 1914-1918)	1914-1918	-36.7587112	144.2837459	Bendigo
+316	Gippsland Mercury (Sale, Vic. : 1914-1918)	1914-1918	-38.1	147.0666667	Sale
+317	Maryborough & Dunolly Advertiser (Vic. : 1914-1918)	1914-1918	-25.538905	152.707925	Maryborough
+318	Sandringham Southern Cross (Vic. : 1914-1918)	1914-1918	-37.949593	145.003738	Sandringham
+319	Leader (Melbourne, Vic. : 1914-1918)	1914-1918	-37.814107	144.96328	Melbourne
+320	Berwick Shire News and Pakenham and Cranbourne Gazette (Berwick, Vic. : 1914-1917)	1914-1917	-38.030918	145.346115	Berwick
+321	Great Southern Star (Leongatha, Vic. : 1914-1918)	1914-1918	-38.4760823	145.9465664	Leongatha
+322	Hawthorn and Camberwell Citizen (Vic. : 1914)	1914	-37.8201478	145.0358004	Hawthorn
+323	Hawthorn, Kew, Camberwell Citizen (Vic. : 1914-1918)	1914-1918	-37.8201478	145.0358004	Hawthorn
+324	Heidelberg News and Greensborough and Diamond Creek Chronicle (Vic. : 1914-1916)	1914-1916	-37.756367	145.066849	Heidelberg
+325	Heidelberg News and Greensborough, Eltham and Diamond Creek Chronicle (Vic. : 1916-1918)	1916-1918	-37.756367	145.066849	Heidelberg
+326	Ovens and Murray Advertiser (Beechworth, Vic. : 1914-1918)	1914 -1918	-36.3592906	146.6872665	Beechworth
+327	Pakenham Gazette and Berwick Shire News (Pakenham East, Vic. : 1917-1918)	1917-1918	-38.078518	145.482727	Pakenham East
+328	Preston Leader (Vic. : 1914-1918)	1914-1918	-37.7388134	145.0040282	Preston
+329	Ringwood and Croydon Chronicle (Vic. : 1914-1918)	1914-1918	-37.814262	145.227386	Ringwood
+330	Snowy River Mail (Orbost, Vic. : 1914-1918)	1914-1918	-37.7071796	148.4549611	Orbost
+331	Shepparton Advertiser (Vic. : 1914-1918)	1914-1918	-36.3775176	145.4000439	Shepparton
+332	Melton Express (Vic. : 1915-1918)	1915-1918	-37.682979	144.5804663	Melton
+333	Moorabbin News (Vic. : 1914-1918)	1914-1918	-37.934338	145.037277	Moorabbin
+334	Seymour Express and Goulburn Valley Avenel, Craytown, Nagambie, Tallarook and Yea Advertiser (Vic. : 1914-1918)	1914-1918	-37.0245292	145.1369113	n Seymour
+335	Standard (Port Melbourne, Vic. : 1914)	1914	-37.814107	144.96328	Port Melbourne
+336	Queensland Figaro (Brisbane, QLD : 1901-1936)	1901-1936	-27.4710107	153.0234489	Brisbane
+337	Queensland Figaro and Punch (Brisbane, QLD : 1885-1889)	1885-1889	-27.4710107	153.0234489	Brisbane
+338	Queensland Figaro (Brisbane, QLD : 1883-1885)	1883-1885	-27.4710107	153.0234489	Brisbane
+339	Launceston Courier (Tas. : 1840-1843)	1840-1843	-41.4370868	147.1393767	Launceston
+340	The Charleville Courier (Qld. : 1896-1898)	1896-1898	-26.4013454	146.2396525	Charleville
+341	Southern Advertiser (Bunbury, WA : 1888)	1888	-33.34	115.642	Bunbury
+342	Kalgoorlie Miner (WA : 1895-1950)	1895-1950	-30.7470155	121.4748548	Kalgoorlie
+343	Coolgardie Miner (WA : 1913-1917)	1913-1917	-30.9546541	121.1648961	Coolgardie
+344	The Bunbury Herald and Blackwood Express (WA : 1919-1929)	1919 -1929	-33.34	115.642	Bunbury
+345	Bunbury Herald (WA : 1892-1919)	1892-1919	-33.34	115.642	Bunbury
+346	Bendigo Advertiser (Vic. : 1855-1918)	1855-1918	-36.7587112	144.2837459	Bendigo
+347	Recorder (Port Pirie, SA : 1919-1954)	1919-1954	-33.233334	138	Port Pirie
+348	Port Pirie Recorder and North Western Mail (SA : 1898-1918)	1898 -1918	-33.233334	138	Port Pirie
+349	Port Pirie Recorder (SA : 1918-1919)	1918-1919	-33.233334	138	Port Pirie
+350	Nepean Times (Penrith, NSW : 1914-1920)	1882-1962	-33.7521785	150.6910467	Penrith
+351	The Cumberland Argus and Fruitgrowers Advocate (Parramatta, NSW : 1888-1950)	1888-1950	-33.8151285	151.0031549	Parramatta
+352	Irrigation Record (Sydney, NSW : 1913-1917)	1913-1917	-33.8674869	151.2069902	Sydney
+353	The Newcastle Chronicle and Hunter River District News (NSW : 1859-1866)	1859-1866	-32.932737	151.76977	Newcastle
+354	The Newcastle Chronicle (NSW: 1866-1876)	1866-1876	-32.932737	151.76977	Newcastle
+355	Miners' Advocate and Northumberland Recorder (Newcastle, NSW : 1873-1876)	1873-1876	-32.932737	151.76977	Newcastle
+356	Newcastle Morning Herald & Miners' Advocate (NSW : 1876-1954)	1876 -1954	-32.932737	151.76977	Newcastle
+357	Globe (Sydney, NSW : 1885-1887)	1885-1887	-33.8674869	151.2069902	Sydney
+358	Globe (Sydney, NSW : 1911-1914)	1911-1914	-33.8674869	151.2069902	Sydney
+359	The Globe and Sunday Times War Pictorial (Sydney, NSW : 1914-1917)	1914 -1917	-33.8674869	151.2069902	Sydney
+360	The Kiama Independent and Illawara and Shoalhaven (NSW : 1863)	1863	-34.6702661	150.8543867	Kiama
+361	The Kiama Independent, and Shoalhaven Advertiser (NSW : 1863-1947)	1863 -1947	-34.6702661	150.8543867	Kiama
+362	The Kiama Reporter and Illawarra Journal (NSW : 1899-1947)	1899 -1947	-34.6702661	150.8543867	Kiama
+363	Kiama Independent (NSW ; 1947-1954)	1947-1954	-34.6702661	150.8543867	Kiama
+364	The Goulburn Herald and County of Argyle Advertiser (NSW : 1848-1859)	1848- 1859	-34.7548346	149.7186486	Goulburn
+365	Goulburn Herald (NSW : 1860-1864)	1860-1864	-34.7548346	149.7186486	Goulburn
+366	The Goulburn Herald and Chronicle (NSW : 1864-1881)	1864-1881	-34.7548346	149.7186486	Goulburn
+367	Goulburn Herald (NSW : 1881-1908)	1881-1908	-34.7548346	149.7186486	Goulburn
+368	Goulburn Evening Penny Post (NSW : 1881-1940)	1881-1940	-34.7548346	149.7186486	Goulburn
+369	Goulburn Evening Post (NSW : 1940-1957)	1940-1957	-34.7548346	149.7186486	Goulburn
+370	Port Lincoln Times (SA : 1927-1954)	1927-1954	-34.603333	135.87454	Port Lincoln
+371	Bunyip (Gawler, SA : 1863-1954)	1863-1954	-34.59954	138.7491411	Gawler
+372	Northern Argus (Clare, SA : 1869-1954)	1869-1954	-33.8332575	138.6118517	Clare
+373	Southern Argus (Port Elliot, SA : 1866-1954)	1866-1954	-35.5227193	138.6619551	Port Elliot
+374	Western Star and Roma Advertiser (Toowoomba, Qld. : 1875-1948)	1875 -1948	-27.56	151.951	Toowoomba
+375	Sunday Mail (Brisbane) (Qld. : 1926-1954)	1926-1954	-27.4710107	153.0234489	Brisbane
+376	Ipswich Herald & General Advertiser (Qld. : 1861-1862)	1861 -1862	-27.6140934	152.7584716	Ipswich
+377	Queensland Times, Ipswich Herald & General Advertiser (Qld. : 1863-1908)	1863-1908	-27.6140934	152.7584716	Ipswich
+370	Queensland Times (Ipswich) (Qld. : 1909-1954)	1909-1954	-27.6140934	152.7584716	Ipswich
+379	Queensland Country Life (Qld. : 1900-1954)	1900-1954	-27.4710107	153.0234489	Brisbane
+380	Kiama Examiner (NSW : 1858-1859)	1858-1859	-34.6702661	150.8543867	Kiama
+381	Examiner (Kiama, NSW : 1859-1862)	1859-1862	-34.6702661	150.8543867	Kiama
+382	Wagga Wagga Express and Murrumbidgee District Advertiser (Milson's Point, NSW : 1858-1875)	1858-1875	-35.15992	147.46626	Wagga Wagga
+383	The Telegraph, St Kilda, Prahran and South Yarra Guardian (Vic. : 1866-1888)	1866-1888	-37.851524	144.993484	Prahran
+384	North Melbourne Gazette (Vic. : 1894-1901)	1894-1901	-37.79914	144.941568	North Melbourne
+385	North Melbourne Courier and  Melbourne Advertiser (Vic. : 1895-1913)	1895-1913	-37.79914	144.941568	North Melbourne
+386	The Herald (Fremantle, WA : 1867-1886)	1867-1886	-32.0560399	115.7471797	Fremantle
+387	The Bowral Free Press (Milson's Point, NSW : 1884-1906)	1884-1906	-34.4791552	150.4177969	Bowral
+388	Kiama Reporter (NSW: 1886-1887)	1886-1887	-34.6702661	150.8543867	Kiama
+389	Reporter and Illawara Journal (Kiama, NSW: 1887-1894)	1887-1894	-34.6702661	150.8543867	Kiama

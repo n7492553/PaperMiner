@@ -1,0 +1,25 @@
+<div id="terms-of-use" class="help">
+
+<p>&nbsp;
+<div align="center">
+ <h3 class="help-h3">TERMS OF USE FOR THE SMART SERVICES CRC PAPERMINER WEB PORTAL</h3>
+ http://www.paperminer.org.au
+</div>
+
+<p>The PaperMiner platform (Software and Services) has been developed as a collaboration between Queensland University of Technology, Queensland University, Queensland Cyber Infrastructure Foundation and Smart Services CRC Pty Ltd (SSCRC). 
+<p>The PaperMiner platform is NOT a product provided by or supported by the National Library of Australia.
+<p>The PaperMiner platform accesses the National Library of Australia's Trove database. Users of the PaperMiner platform are thus also bound by the Terms of Use for the Trove platform
+ (see <a href="http://trove.nla.gov.au/general/termsofuse" target="_blank">http://trove.nla.gov.au/general/termsofuse</a>).
+<p>This Software is provided to you solely for the purpose of individual usage, evaluation, testing and providing feedback.
+<p>The Software is not suitable for any commercial purpose, such as, but not limited to:
+<div class="indent">
+ <p>(a) manufacturing, providing, selling, hiring or otherwise exploiting a product or process incorporating the Software;
+ <br>(b) providing, selling, hiring or other exploiting a service using or incorporating the Software, to derive, or with the intention of deriving, revenue.
+</div>
+<p>The Software must not be relied upon by you for any personal reasons. 
+<p>The Software is available for use at your own risk. To the fullest extent possible by law, Smart Services CRC and its project partners do not make any warranty as to performance of the Software, fitness of the Software for a particular purpose, error-free operation of the Software or any outcomes that may be you anticipate. 
+<p>Smart Services CRC and its <a href="#" onClick="showPartners()">project partners</a> are not responsible for any loss of data arising as a result of any use of the Software by you or the interaction of the Software with any third party software. Any condition or warranty that would otherwise be implied in relation to the use of the Software is excluded.
+<p>Smart Services CRC and its <a href="#" onClick="showPartners()">project partners</a> excludes all liability to you arising directly or indirectly from use of the Software and any indirect, incidental, special or consequential damages suffered by you
+<p>&nbsp;
+
+</div>

@@ -1,0 +1,45 @@
+<div id="partners">
+ <p>&nbsp;
+ <p><em>Paper Miner</em> was made possible by funding and in-kind contributions from the following partners:
+ <table>
+  <tr class="partn">
+   <td><img src="images/logo_uq.jpg" hspace="20" alt="University of Queensland Logo" /></td>
+   <td>
+    <p><a target="_blank" href="http://www.uq.edu.au"><h3>University of Queensland</h3></a>
+   </td>
+  </tr>
+  <tr class="partn">
+   <td><img src="images/logo_ss.jpg" hspace="20" alt="SS CRC Logo" /></td>
+   <td>
+    <p><a href="http://smartservicescrc.com.au/" target="_blank" class="part-link"><h3>Smart Services Co-Operative Research Centre</h3></a>
+   </td>
+  </tr>
+  <tr class="partn">
+   <td><img src="images/logo_qut.jpg" hspace="20" alt="QUT Logo" /></td>
+   <td>
+    <p><a target="_blank" href="http://www.qut.edu.au/about/campuses-and-locations/gardens-point"><h3>Queensland University of Technology</h3></a>
+   </td>
+  </tr>
+  <tr class="partn">
+   <td><img src="images/logo_qcif.jpg" hspace="20" alt="QCIF Logo" /></td>
+   <td>
+    <p><a href="http://www.qcif.edu.au/" target="_blank" class="part-link"><h3>Queensland Cyber Infrastructure Foundation</h3></a>
+     </ul>
+    </div>
+   </td>
+  </tr>
+  <tr class="partn">
+   <td><img src="images/logo_nla.png" hspace="20" alt="NLA Logo" /></td>
+   <td>
+    <p><a href="http://www.nla.gov.au/" target="_blank" class="part-link"><h3>National Library of Australia</h3></a>
+   </td>
+  </tr>
+  <tr class="partn">
+   <td><img src="images/logo_gu.jpg" hspace="20" alt="Griffith University Logo" /></td>
+   <td>
+    <p><a target="_blank" href="http://www.griffith.edu.au/about-griffith/campuses/mt-gravatt-campus"><h3>Griffith University</h3></a>
+   </td>
+  </tr>
+ </table>
+ <p>&nbsp;
+</div>

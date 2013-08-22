@@ -1,0 +1,118 @@
+<!--
+ * Autoconf like facility for creating the Ant build script with configured properties, paths, etc.
+ * This is a bit of a hack, using manifest constants when it really should do a search for the files,
+ * but with one developer and two environments to manage, what the heck?
+ *
+ * Ron C 2013-01-08
+ *
+ -->
+<project name="Configure" default="conf" basedir=".">
+
+  <!-- include "local" environment settings -->
+  <property environment="env"/>
+
+  <condition property="catalina-home-dir" value="${env.CATALINA_HOME}">
+    <isset property="env.CATALINA_HOME" />
+  </condition>
+  <!-- ELSE IF -->
+  <condition property="catalina-home-dir" value="/opt/local/stow/apache-tomcat-7.0.34">
+    <available file="/opt/local/stow/apache-tomcat-7.0.34" type="dir" property="env-osx" value="true"/>
+  </condition>
+  <!-- ELSE -->
+  <condition property="catalina-home-dir" value="/var/lib/tomcat7">
+    <available file="/var/lib/tomcat7" type="dir" property="env-ubuntu"/>
+  </condition>
+  
+  <!-- IF -->
+  <condition property="tomcat-lib-dir" value="${catalina-home-dir}/lib">
+    <available file="/opt/local/stow/apache-tomcat-7.0.34" type="dir" property="env-osx" value="true"/>
+  </condition>
+  <!-- ELSE -->
+  <condition property="tomcat-lib-dir" value="/usr/share/tomcat7/lib">
+    <available file="/var/lib/tomcat7" type="dir" property="env-ubuntu"/>
+  </condition>  
+  
+  <!-- IF -->
+  <condition property="deploy-dir" value="/opt/local/stow/apache-tomcat-7.0.16/webapps">
+    <available file="/opt/local/stow/apache-tomcat-7.0.34" type="dir" property="env-osx" value="true"/>
+  </condition>
+  <!-- ELSE -->
+  <condition property="deploy-dir" value="/var/lib/tomcat7/webapps">
+    <available file="/var/lib/tomcat7" type="dir" property="env-ubuntu"/>
+  </condition>  
+  
+  <!-- IF -->
+  <condition property="server-name" value="${env.HOSTNAME}" >
+    <isset property="env.HOSTNAME" />
+  </condition>
+  <!-- ELSE IF -->
+  <condition property="server-name" value="redactor.modelenginenews.com">
+    <available file="/opt/local/stow/apache-tomcat-7.0.34" type="dir" property="env-osx" value="true"/>
+  </condition>
+  <!-- ELSE -->
+  <condition property="server-name" value="paperminer2.qern.qcif.edu.au">
+    <available file="/var/lib/tomcat7" type="dir" property="env-ubuntu"/>
+  </condition>  
+  
+  <!-- IF -->
+  <condition property="war-file-name" value="ROOT">
+    <isset property="env.PRODUCTION" />
+  </condition>
+  <!-- ELSE -->
+  <condition property="war-file-name" value="PaperMiner">
+    <not>
+      <isset property="env.PRODUCTION" />
+    </not>
+  </condition>
+  
+  <!-- IF -->
+  <condition property="webapp-prefix" value="">
+    <isset property="env.PRODUCTION" />
+  </condition>
+  <!-- ELSE -->
+  <condition property="webapp-prefix" value="/PaperMiner">
+    <not>
+      <isset property="env.PRODUCTION" />
+    </not>
+  </condition>
+  
+<!-- IF -->
+  <condition property="index-base" value="">
+    <isset property="env.PRODUCTION" />
+  </condition>
+  <!-- ELSE -->
+  <condition property="index-base" value="/PaperMiner/">
+    <not>
+      <isset property="env.PRODUCTION" />
+    </not>
+  </condition>
+  
+
+
+    
+  <target name="conf" unless="tomcat-home-not-found">
+    <echo message="CATALINA HOME=${catalina-home-dir}" />
+    <echo message="   TOMCAT LIB=${tomcat-lib-dir}" />
+    <echo message="       SERVER=${server-name}" />
+    <echo message=" WAR FILE NAME=${war-file-name}" />
+    <echo message=" WEBAPP-PREFIX=${webapp-prefix}" />
+    
+    <copy file="conf/build.xml.in" tofile="/tmp/build.xml" />
+    <replace file="/tmp/build.xml"
+      token="@CATALINA_HOME_DIR@" value="${catalina-home-dir}" />
+    <replace file="/tmp/build.xml"
+      token="@TOMCAT_LIB_DIR@" value="${tomcat-lib-dir}" />
+    <replace file="/tmp/build.xml"
+      token="@DEPLOY_HOST@" value="${server-name}" />
+    <replace file="/tmp/build.xml"
+      token="@URI_PREFIX@" value="${webapp-prefix}" />
+    <replace file="/tmp/build.xml"
+      token="@WAR_FILE@" value="${war-file-name}" />
+    <replace file="/tmp/build.xml"
+      token="@INDEX_BASE@" value="${index-base}" />
+      
+    <move file="/tmp/build.xml" tofile="build.xml" />
+  </target>
+  
+  </project>
+    

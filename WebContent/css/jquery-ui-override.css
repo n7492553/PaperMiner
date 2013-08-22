@@ -1,0 +1,31 @@
+/*
+ * Change some JQuery-ui things we can't live with
+ */
+ 
+*.ui-widget {
+ font:normal 13px verdana,ariel,helvetica,sans-serif;
+ font-size:13px;
+}
+*.ui-dialog .ui-dialog-titlebar {
+ position:relative;
+ padding-top:.1em!important;
+ padding-bottom:.1em!important;
+ font-family:verdana,ariel,helvetica,sans-serif;
+ height:20px;
+}
+*.ui-dialog-title {
+ font:500 14px verdana,ariel,helvetica,sans-serif;
+ width:100%;
+ text-align:center;
+}
+*.ui-button .ui-button-text {
+ font:normal 13px verdana,ariel,helvetica,sans-serif;
+ font-weight:normal;
+}
+*.ui-dialog-buttonpane {
+ font-size:13px;
+ border:0 0 0 0!important;
+ margin:0 0 0 0!important;
+ padding:0!important;
+}
+ 

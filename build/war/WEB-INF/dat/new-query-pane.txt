@@ -1,0 +1,59 @@
+<h3>New Query</h3>
+
+ <div align="center">
+  Query type:
+  <input type="radio" name="query-rb1" value="simple" checked="true" onChange="_showQueryForm('q-simple')" > Simple </input>
+  &nbsp; &nbsp;
+  <input type="radio" name="query-rb1" value="advanced" onChange="_showQueryForm('q-advanced')" > Advanced </input>
+  &nbsp; &nbsp;
+  <input type="radio" name="query-rb1" value="custom" onChange="_showQueryForm('q-custom')" > Custom </input>
+  <p>&nbsp;   
+ </div>
+ 
+<div id="q-simple">
+ <table id="query-form">
+  <tr><td><span class="sub-header">Simple Query</span></td><td></td></tr>
+  <tr>
+   <td class="td-name">Search Term:</td>
+   <td><input id="q1" type="text"/></td>
+  </tr>
+  <tr><td colspan="2"><hr class="pm-button-sep"></td></tr>
+  <tr>
+   <td></td>
+   <td>
+    <div class="pm-button-bar">
+     <button id="nq-pb11" onClick="resetQueryPane()">Clear form</button>
+     <button id="nq-pb12" onClick="_doQuery(0)">Execute query</button>
+    </div>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<div id="q-advanced" class="hidden">
+ <table class="query-form">
+  <tr><td colspan="2"><em>Advanced search not yet implemented</em>
+  <tr class="hidden">
+   <td class="td-name">Zone:</td>
+   <td>
+    <select id="z1">
+      <option>newspaper</option>
+      <option>book</option>
+      <option>picture</option>
+      <option>article</option>
+      <option>music</option>
+      <option>map</option>
+      <option>collection</option>
+      <option>list</option>
+    </select>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<div id="q-custom" class="hidden">
+ <table class="query-form">
+  <tr><td colspan="2"><em>Custom search not yet implemented</em></td></tr>
+ </table>
+</div>
+  

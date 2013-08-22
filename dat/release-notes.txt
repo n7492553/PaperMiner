@@ -1,0 +1,109 @@
+<div id="release-notes" class="help">
+
+<h1>Release Notes for Version 1.0.1</h3>
+
+<ul>
+ <li class="help"><a href="#t1">New Features in This Release</a></li>
+ <li class="help"><a href="#t2">Defects Fixed in this Release</a>
+  <ul class="lev2">
+   <li class="help"><a href="#t21">Unable to Register or Login on a Tablet</a></li>
+   <li class="help"><a href="#t22">The Timeline Sliders don't work in some browsers</a></li>
+  </ul>
+ </li>
+ <li class="help"><a href="#t3">Known Restrictions, Bugs and Workarounds in this Release</a>
+  <ul class="lev2">
+   <li class="help"><a href="#t31">Map not fully displayed</a></li>
+   <li class="help"><a href="#t32">Timeline Sliders hard to move on Tablets</a></li>
+   <li class="help"><a href="#t33">The Wheel Spins, but Nothing Happens</a></li>
+   <li class="help"><a href="#t34">No Locations!</a></li>
+   <li class="help"><a href="#t35">There is text in the Snippet, but the Full Text says "&lt;nil&gt;"</a></li>
+   <li class="help"><a href="#t37">The Sahara is in Africa, not India</a></li>
+  </ul>
+ </li>
+</ul>
+<hr>
+
+<h3 id="t1" class="help-h3">New Features in This Release</h3>
+<p>As this is the first general release of <em>Paper Miner</em>, all features are effectively new!
+We suggest you review the Help pages to gain an understanding of the capabilities of <em>Paper Miner</em>.
+
+<p>You will notice that some menu choices are for functions not yet implemented. We have left these in rather than hiding
+them so users will have some idea of the direction we think <em>Paper Miner</em> development should take. We welcome
+your experiences and suggestions (see the Contact pane).
+
+<h3 id="t2" class="help-h3">Defects Fixed in this Release</h3>
+
+<div class="indent">
+
+<h4 id="t21" class="help-h4">Unable to Register or Login on a Tablet</h4>
+<p>Users who tried the Beta releases of <em>Paper Miner</em> reported that the dialog used to Login, or Register, was not
+always visible after selecting the menu option. This was due to an obscure relative positioning problem that has been fixed.
+We include this note so that you know it is safe to go back to your iPad, subject to the restriction(s) noted below.
+
+<h4 id="t22" class="help-h4">The Timeline Sliders don't work in some browsers</h4>
+<p>The bug which prevented the timeline markers from being moved when run under Chrome, Safari, and Firefox on MS Windows 7 and 8
+has been tracked down to the operating system incorrectly reporting to the browser that machines without touch screens had touch screens!
+Perhaps they thought we'd all be using Surface tablets by now. Regardless, Paper Miner should now only enable gesture response on iPads,
+and perhaps Android devices.
+
+</div>
+
+<h3 id="t3" class="help-h3">Known Restrictions, Bugs and Workarounds in this Release</h3>
+
+<div class="indent">
+
+<h4 id="t31" class="help-h4">Map not fully displayed</h4>
+<p>During development, testers noticed that on occasions, most of the map display would turn grey, with only a fragment displayed.
+<em>Paper Miner</em> uses Google Maps which builds the display using a matrix of "tiles", downloaded on demand from Google, at
+various zoom factors. The "missing tile" problem is a result of the tiles being incorrectly located with negative offsets,
+outside the map display. This is a Google Map bug, but due to its highly intermittent nature, the cause is not known, so no
+investigation can be made. 
+
+<p>The simple work-around has been to reload <em>Paper Miner</em>, but as this will cause the loss of all records associated with
+the current query, a button has been provided on the Map pane to reset the map without loss of TROVE results and any associated Map Markers.
+If you suddenly experience lost map tiles, press the <span class="help-button">&nbsp;Refocus map&nbsp;</span> button to restore the
+default map display pan and zoom settings.
+
+<h4 id="t32" class="help-h4">Timeline Sliders hard to move on Tablets</h4>
+<p>It has been noticed that while the Timeline sliders work well with a mouse, users of gesture based devices such as the Apple iPad and other tablet
+computers may experience difficulty dragging the markers to new positions. A cure will be investigated in a future release, but until them,
+rotating the display to landscape mode will make sliding the timeline markers easier. You may return to portrait mode after they are repositioned.
+
+<p>Note that <em>Paper Miner</em> was conceived as a desktop application, although where possible, we've tried to make it Tablet Friendly.
+
+<h4 id="t33" class="help-h4">The Wheel Spins, but Nothing Happens</h4>
+<p>When TROVE is exceptionally busy, it is possible for a request to timeout in a way that <em>Paper Miner</em> can not currently detect and trap.
+This effectively locks up <em>Paper Miner</em> as it waits patiently for something which will never happen. We are looking at possible ways of
+detecting and intervening, but right now, if it looks like your query is frozen with the spinning wheel spinning, the only work-around is to
+reload <em>Paper Miner</em>.
+
+<h4 id="t34" class="help-h4">No Locations!</h4>
+<p>The task of mining TROVE's 300 million articles for locations is time consuming and complicated by external factors beyond our control.
+We intend that the job will be completed Real Soon Now, but if your query does not display any location pins, it's probably because we have
+not processed the records returned by your query yet. You may wish to toggle the Map Markers to the alternative Publisher locations as a
+substitute for now.
+
+<h4 id="t35" class="help-h4">There is text in the Snippet, but the Full Text says "&lt;nil&gt;"</h4>
+<p>How the snippet is generated is not known, and instances of the snippet text being more correct, OCR-wise, than the full text are not uncommon.
+It appears in some cases that the full text is withheld pending a quality check, while the record itself is released! This a TROVE feature beyond our control.
+
+<h4 id="t36" class="help-h4">The Timeline Sliders don't work in some browsers</h4>
+<p>Beta testers have reported that on some combinations of computer hardware, operating system, and web browser of choice, the timeline markers
+will not budge. We have been unable to reproduce this problem in any of our test environments, but have seen it demonstrated. A cause and
+remedy are a priority for a near future release. Until then, we can only pass on that one user unable to use Chrome, had success with Safari, while
+another having problems with Chrome, Firefox, and Safari, was able to use the sliders under Opera! Note that no attempt has been made to make 
+<em>Paper Miner</em> compatible with any version of Internet Explorer. All development was carried out on an Apple iMac, using Linux servers.
+The developers have tested it under Chrome, Firefox, and Safari with no problems, but we welcome your input relating to combinations of
+platform and components giving trouble.
+
+<h4 id="t37" class="help-h4">The Sahara is in Africa, not India</h4>
+<p>Correctly identifying data mined locations with 100 percent accuracy is impossible, short of artificial intelligence to infer states and
+countries from the article context. The problem of "false positives" is compounded by OCR errors which can cause a place name to be identified
+against misspelled text, or missed because of name mutilation. Our philosophy is similar to TROVE's: do the best we can and provide tools
+for our users to remove and insert locations related to a particular record for the benefit of all.
+
+</div>
+
+<p>&nbsp;
+
+</div>
