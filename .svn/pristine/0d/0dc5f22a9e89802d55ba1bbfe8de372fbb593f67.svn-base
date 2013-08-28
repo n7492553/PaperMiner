@@ -1,0 +1,251 @@
+<div id="help-pm" class="help">
+
+<br>&nbsp;
+<h1>Paper Miner</h1>
+
+<h2 id="h1">Introduction</h2>
+<p><em>Paper Miner</em> is a wrapper around the <a href="http://trove.nla.gov.au/" target="_blank">NLA TROVE service</a>, specifically, the newspaper "zone"
+which contains searchable text from Australian newspapers, and the Australian Womens' Weekly. It enhances the basic search results by adding
+graphic views which assist users to analyze the masses of data which may be returned by a key-word search. 
+At present, these visualization aids are a <em>Timeline</em> depicting the spread of search results by year, and a map which 
+displays the location of places mentioned in the search result articles, or the place of publication of the articles. Both employ
+colour encoding to represent the frequency of record instances in the result set.</p>
+
+<div class="indent">
+
+<h3 id="h11" class="help-h3">Responsiveness</h3>
+<p>The NLA TROVE service processes tens of thousands of requests per hour! At times, the speed of response can be quite slow. At times of heavy load,
+it is possible that a TROVE request will timeout and fail completely. Sadly, this is NOT something that <em>Paper Miner</em> can do anything about. 
+Please be patient...
+
+</div>
+
+<p>We strongly recommend that you read the <a href="#" onClick="showHelp('rel')">Release Notes</a> for the current version which details
+any limitations, issues, and work-arounds of which you should be aware.
+
+<h2 id="h2">Menu</h2>
+<p>The <em>Paper Miner</em> menu controls query execution, display selection, user management, etc. Although most menu items should be
+obvious to the modern computer user, the notes below explain some less obvious features of the service and may save you some time.</p>
+
+<div class="indent">
+<ul>
+ <li class="help"><a href="#h21">Query</a>
+     <ul class="lev2">
+      <li class="help"><a href="#h211">New</a></li>
+      <li class="help"><a href="#h212">Current</a></li>
+      <li class="help"><a href="#h213">Saved</a></li>
+     </ul>
+ </li>
+ <li class="help"><a href="#h22">View</a>
+     <ul class="lev2">
+      <li class="help"><a href="#h221">Map</a></li>
+      <li class="help"><a href="#h222">Raw Results</a></li>
+      <li class="help"><a href="#h2221">Edit Locations</a></li>
+     </ul>
+ </li>
+ <li class="help"><a href="#h23">User</a>
+ <ul class="lev2">
+      <li class="help"><a href="#h231">Login or Register</a></li>
+      <li class="help"><a href="#h231">Manage your details</a></li>
+      <li class="help"><a href="#h233">Logout</a></li>
+     </ul>
+ </li>
+ <li class="help"><a href="#h24">Help</a></li>
+ <li class="help"><a href="#h25">Partners</a></li>
+ <li class="help"><a href="#h26">Contact</a></li>
+</ul>
+</div>
+
+<div class="indent">
+
+ <h3 id="h21" class="help-h3">Query</h3>
+ <p>This menu allows user to create and execute queries, examine the progress of the current query, and to save and re-execute queries.</p>
+ 
+ <div class="indent">
+ 
+  <h4 id="h211" class="help-h4">New</h4>
+  <p>To create a new query, select <span class="menu-text">Query&#187;New</span>. The New Query pane provides three levels of query, although
+  in the present release, only "Simple" queries are supported.</p>
+  
+  <div class="indent">
+  <p><b>Simple</b>: a basic search based on user provided text. This can be a single word, multiple words, and terms enclosed in quotes.
+  The search is explicitly directed to the TROVE "newspaper" zone.
+  For help composing your query, see the <a href="http://trove.nla.gov.au/general/newspapers_help" target="_blank">TROVE Newspaper Help page</a>.
+  </p>
+  </div>
+  
+  <p>To start your query running, press the <span class="help-button">&nbsp;Execute query&nbsp;</span> button. 
+  A "spinner" activity indicator will appear on the top of the screen, to the left of the TROVE Logo
+  while query results are being received. The display will switch automatically to the <a href="#h212">Current query</a> pane as soon
+  as the first results arrive.
+  <em>Paper Miner</em> begins by fetching a small number of results to provide swift feedback on how many records your query might ultimately receive.
+  The number of records per request ramps up until the maximum of one hundred is reached. If you change to a different view before the first
+  results are received, the automatic switch to the Current query pane is skipped.</p>
+
+  <h4 id="h212" class="help-h4">Current</h4>
+  <p>This menu option may be selected at any time to examine the state of the current query being executed, or last one executed. 
+  From this display you can pause and resume your query, at will. This display is selected automatically when
+  the first results for your query arrive, provided you are still viewing the "New" query view. If you change to another view before the
+  first results arrive, the switch to the "Current" view will not take place.</p>
+  
+  <p>The Current query view allows you to pause and resume your query at any time. The number of records currently fetched, the total 
+  number of records that your query has found, and the time the query has spent retrieving records from TROVE are displayed.
+  TROVE restricts users of an API Key to a maximum of 100 records per request.
+  <p>Paper Miner</em> begins with a small number of records to provide a quick initial response, ramping up over the first few requests
+  to the maximum allowable.</p>
+  
+  <p>If the query is one you may wish to re-run later, you can save the query by (you guessed it) pressing the 
+  <span class="help-button">&nbsp;Save query&nbsp;</span> button.
+  This takes you to a view which displays all your saved queries and from which you can provide a meaningful name for the query to be saved.
+  For convenience, the title defaults to the query term(s), but you can change it to anything you wish. The number of records found when you
+  ran the query is also saved and displayed so you can determine if some OCR fix in TROVE has increased the hits on a subsequent run.
+  Unfortunately the amount of storage which would be required to determine just what the records involved in a change might be makes
+  such a feature impractical.</p>
+  
+  <p>The <span class="help-button">&nbsp;Revise query&nbsp;</span> button takes you back to the New query pane without clearing the terms
+  used previously. This allows you to modify a search without re-entering terms. Note that you will need to pause the
+  current search to use this feature.</p>
+  
+  <h4 id="h213" class="help-h4">Saved</h4>
+  <p>As <a href="#h212">described above</a>, <em>Paper Miner</em> provides each user with up to 20 saved queries for convenient re-execution.
+  Selecting the <span class="menu-text">Query&#187;Saved</span> displays your queries, allowing you to select one for execution by clicking the
+  query description next to the check box. This takes you to the <a href="h211">New query</a> view, allowing you to start it running, or modify the
+  query string before execution.</p>
+  
+  <p>To delete saved queries which are no longer required, tick (click) the check-box to the left of the query description, the press the
+  <span class="help-button">&nbsp;Delete Selected&nbsp;</span> button. You may delete more than one query at a time.</p>
+  
+  <p>A future release of <em>Paper Miner</em> will allow you to schedule periodic re-execution of your stored queries, emailing you the number
+  of results found for the new and previous run. You will need to authenticate your email address to use the Stored query feature. This
+  process is explained in the <a href="#h23">User menu section</a>.
+
+ </div>
+
+ <h3 id="h22" class="help-h3">View</h3>
+ <p>This set of menu options is the real power behind <em>Paper Miner</em>. As wonderful as a list of references to newspaper articles
+ may be, reading each to determine its relevance to you is time consuming and tedious, not to mention distracting if you elect to correct the OCR text!
+ The View menu provides graphic visualizations of your results, as well as different ways of viewing and sorting the actual results.
+ Testing suggests that the sort capability of <em>Paper Miner</em> is significantly faster than requesting sorted results from TROVE itself.</p>
+ 
+ <p>Note that is is not necessary to complete, or pause a query before switching to a View option. You may let the query run in the
+ background and view the results graphically, as the arrive.</p>
+
+ <div class="indent">
+
+  <h4 id="h221" class="help-h4">Map</h4>
+  <p>The "Map" view provides two separate visualization, geospatial, and temporal. The map displays marker pins denoting either the
+  place of publication of results received so far, or the location of place names data mined from the basic TROVE results by the
+  <em>Paper Miner</em> researchers, and users. The timeline indicates how the results are distributed by year of publication. The 
+  density of results with a year, or for a data mined location are indicated by the colour of the timeline bar, and the the map
+  marker pin. The legend to the right of the map explains the colour coding.</p>
+  
+  <p>To further assist users understand their results, two sliders positioned above the timeline allow the viewer to restrict the
+  timeline range for the map markers, and the <a href="#h222">Raw Results</a>. Click and drag a slider to move it. While the mouse
+  button is down, a popup will display the year the slider is positioned on. Changes to the map markers occur after the slider
+  is released.</p>
+  
+  <p>The map visualization is further controlled by a pair of radio buttons below the timeline display. Selecting "Place names"
+  displays the colour-coded location markers for locations data mined from the results. As there are literally millions
+  of TROVE newspaper articles, this data-mining process is performed off-line and stored in a database, matched to the TROVE
+  identifiers of the records you retrieve. This means that OCR errors may result in some names being omitted. In other cases,
+  ambiguity of a place name may result in it being incorrectly identified. Humans may be able to intelligently identify the
+  correct location from the article context; machines have great difficulty. But we have a solution, described in the section
+  on <a href="#222">Raw Results</a>, below.</p>
+  
+  <p>The other radio button, "Publisher", indicates the location of the publisher for all articles currently found by the 
+  query which fall within the selected timeline slider positions. No attempt is made currently to colour code publisher
+  markers according to frequency in the result set.</p>
+  
+  <p>If you mouse-over a timeline marker, popup hover-text will indicate the actual year the marker represents. Markers are also
+  buttons, so if you click one, the display will change to the <a href="#h222">Raw Results view</a>, showing only the TROVE
+  records for that year, in ascending date order.
+  
+  <h4 id="h222" class="help-h4">Raw Results</h4>
+  <p>This view gives a scrolling list of results which may be sorted using the radio buttons at the bottom of the display.
+  Clicking an entry in the scrolling list displays the record contents in the detail pane on the right. By default, TROVE
+  returns only a "snippet" of the full article text around the occurrence of your search term(s). You may load the full
+  text into the detail view using the <span class="help-button">&nbsp;load full text&nbsp;</span> button.</p>
+  
+  <p>For convenience, a button is provided to enable you to correct OCR errors of a viewed record, on the actual TROVE
+  web site. After saving the changes on TROVE, you can press the <span class="help-button">&nbsp;Refresh Record&nbsp;</span> button to update the detail view with
+  the changes you have just made.</p>
+  
+  <p><b>Important!</b> As TROVE provides no harvesting capability (such as <a href="http://www.openarchives.org/pmh/" target="_blank">OAI-PMH</a>),
+  corrections you make to place names will not result in their magically appearing in <em>Paper Miner</em>. Instead
+  we rely on periodic full data dumps and full re-mining of place names. This is a massive undertaking requiring
+  super-computer services, so is not undertaken with any great frequency. If TROVE were to implement a simple OAI-PMH
+  service, <em>Paper Miner</em> could be kept in sync with TROVE on a daily basis. Until then, we must rely on
+  infrequent dump/analyze cycles, and the ability of individual users to edit the locations maintained by <em>Paper Miner</em>
+  as <a href="#h2221">described below</a>.</p>
+  
+  <h4 id="h2221" class="help-h4">Edit Locations</h4>
+  <p>The <span class="help-button">&nbsp;Edit Locations&nbsp;</span> button of the <a href="#h222">Raw Results view</a> provides a means for <em>Paper Miner</em> users
+  to assist each other by improving the quality of the mined locations of individual TROVE records, much in the same way
+  as TROVE itself encourages users to improve the quality of its OCR'd data.</p>
+  
+  <p>When selected, the user is presented with a view of the TROVE record's text (snippet, plus full text) and a list of
+  place names associated with the record, if any. If a location is obviously incorrect&mdash;say Newcastle England,
+  when Newcastle Australia is the obvious location from the article context&mdash;the location can be effectively deleted
+  by clicking the check-box beside the name and pressing <span class="help-button">&nbsp;Remove location&nbsp;</span>. This marks the location as "struck-through"
+  so that future data-mining will not inadvertently put it back!</p>
+  
+  <p>To add a location, select the place name in the text (double-click a word, or click-drag over the text), then press the
+  <span class="help-button">&nbsp;Add Location&nbsp;</span> button. A dialog will appear which allows you to search the <em>Paper Miner</em> database, or the
+  <a href="https://developers.google.com/maps/documentation/geocoding/" target="_blank">Google Geocode facility</a>.
+  <b>Always</b> try the local database before google, as we may already "know" the location, and just need to index it
+  against the current TROVE record identifier.</p>
+  
+  <p>In both cases (local and Google), adding an Australian state abbreviation (eg, Qld), and or a full country name
+  (eg, Canada), may help correctly retrieve the required location. You may also edit the place name itself if it has
+  been mangled by OCR and not corrected, however we strongly suggest correcting all the OCR text first in TROVE as
+  part of the add process is to search the full text to determine how many times the place is mentioned. 
+  This will obviously fail if the text contains OCR errors.</p>
+  
+  <p>If you have found a location for the new place name, press the <span class="help-button">&nbsp;Accept&nbsp;</span> button to complete adding it permanently
+  to the public <em>Paper Miner</em> database.</p>
+  
+ </div>
+ 
+ <h3 id="h23" class="help-h3">User</h3>
+ <p>This menu item allows <em>Paper Miner</em> users to log in, register, and maintain their details and options.
+ Note that all TROVE queries will be performed using YOUR TROVE API key. <em>Paper Miner</em> itself does not
+ have one. This allows all users to execute up to TROVE's per-day query limit.</p>
+ 
+ <div class="indent">
+ 
+  <h4 id="h231" class="help-h4">Login or Register</h4>
+  <p>We have taken the view that <em>Paper Miner</em> users are academics and professionals without a malicious bone
+  in their bodies, hence no password protection is employed. To register, we require only an email address, or something
+  which looks like a valid one, and a valid TROVE API Key (see <a href="" target="_blank">here</a> if you don't know what 
+  that means). However we strongly encourage you to use your real email address, and select the option to have it verified.
+  This will be done by mailing you an acknowledgment to which you respond by clicking a link. Doing this unlocks all of
+  the <em>Paper Miner</em> options. Registered users may simply provide their email address to begin using the services.
+  The "logged in" state is cookie based, so closing your browser will log you out, as will selecting the Logout option.</p>
+
+  <h4 id="h232" class="help-h4">Manage your Details</h4>
+  <p>This menu item allows you to change your email address, change your TROVE API Key, or request your email be verified.
+  A future release may extend the user details to cover various preference settings.</p>
+ 
+  <h4 id="h233" class="help-h4">Logout</h4>
+  <p>Guess.</p>
+
+ </div>
+ 
+ <h3 id="h24" class="help-h3">Help</h3>
+ <p>You are reading some of it. The section on TROVE provides some useful links. The About item displays the current
+ <em>Paper Miner</em> Version and Build numbers. It is important to include these when requesting assistance.</p>
+ 
+ <h3 id="h25" class="help-h3">Partners</h3>
+ <p>Without these organization and their talented and insightful people, <em>Paper Miner</em> would not exist.</p>
+ 
+ <h3 id="h26" class="help-h3">Contact</h3>
+ <p>If you experience a repeatable problem, or want your quota of saved queries increased, use this page to contact
+ the <em>Paper Miner</em> Administrator. If reporting a problem, please take the time to explicitly list how the problem
+ may be reproduced and include the type of browser and operating system you are using, together with the information listed
+ in the <span class="menu-text">Help&#187;About</span> dialog box.</p>
+ 
+</div>
+
+<p>&nbsp;
+
+</div>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ <title>Paper Miner</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <base href="@PM_BASE@" />
+ <link href="css/common.css" type="text/css" rel="stylesheet" media="screen" />
+ <link href="css/jquery-ui-1.10.0.custom.min.css" type="text/css" rel="stylesheet" media="screen" />
+ <link href="css/jquery-ui-override.css" type="text/css" rel="stylesheet" media="screen" />
+ <link href="css/jquery.slider.min.css" type="text/css" rel="stylesheet" charset="utf-8">
+ 
+ <script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
+ <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="js/jquery.ui.dialog.min.js" type="text/javascript"></script>
+ <script src="js/activity-indicator.js" type="text/javascript"></script>
+ <script src="js/jquery.slider.all.js" type="text/javascript"></script> 
+ <script src="js/pm.js" type="text/javascript"></script>
+ 
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+ <script type="text/javascript">  window.onload = init;  </script>
+</head>
+<body>
+<div class="content">
+ <div id="header-bar">
+  <table id="header-logos">
+  <tr>
+    <td><div class="spinner" id="busy-box"></div></td>
+    <td><img src="images/trove-api-logo-dark.png" alt="TROVE" width="73" height="30" title="National Archives of Australia"/></td>
+   </tr>
+  </table>
+ </div>
+
+ <div id="nav-wrapper">
+  <div id="menu-bar">
+   <ul class="dropdown">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Query</a></li>
+    <li><a href="#">View</a></li>
+    <li><a href="#">User</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Partners</a></li>
+    <li><a href="#">Contact</a></li>
+   </ul>
+  </div>
+ </div>
+
+ <div id="main-view" align="center">
+ 
+  <div id="map-view">
+  <h3>Map View</h3>
+   <table>
+    <tr>
+     <td>
+      <div id="map-canvas">google-map-canvas</div>
+     </td>
+     <td>
+      <div id="map-sidebar">
+       <table class="map-legend">
+        <tr><td colspan="2">&nbsp; Hits %age</td></tr>
+        <tr><td rowspan="15" valign="top"><img src="images/density_legend.png" alt="distrubution legend"/></td>
+            <td class="td-legend"> 45-100</td></tr>
+        <tr><td class="td-legend"> 30-45</td></tr>
+        <tr><td class="td-legend"> 20-30</td></tr>
+        <tr><td class="td-legend"> 16-20</td></tr>
+        <tr><td class="td-legend"> 13-16</td></tr>
+        <tr><td class="td-legend"> 11-13</td></tr>
+        <tr><td class="td-legend">9.0-11</td></tr>
+        <tr><td class="td-legend">7.0-9.0</td></tr>
+        <tr><td class="td-legend">5.0-7.0</td></tr>
+        <tr><td class="td-legend">3.0-5.0</td></tr>
+        <tr><td class="td-legend">2.0-3.0</td></tr>
+        <tr><td class="td-legend">1.5-2.0</td></tr>
+        <tr><td class="td-legend">1.0-1.5</td></tr>
+        <tr><td class="td-legend">0.5-1.0</td></tr>
+        <tr><td class="td-legend">0.0-0.5</td></tr>
+       </table>
+      </div>
+     </td>
+    </tr>
+   </table>
+   <div id="y2k-section">
+    <div id="y2k-timespan"><input id="y2k-slider" value="1803;1954" ></div>      
+    <div id="y2k-timeline"></div>
+   </div>
+   <div id="map-options">
+    <button id="map-zero" onClick="_resetMap()">Refocus map</button>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    Show locations of:
+    <img src="images/int16.png" alt="publisher icon" height="20"> Publisher
+    <input type="radio" id="pub-rb" name="radio-map" value="0" onClick="toggleMapMarkers()" />
+    &nbsp;&nbsp;
+    <img src="images/int8.png" alt="location icon" height="20"> Place names
+    <input type="radio" id="loc-rb" name="radio-map" value="1" onClick="toggleMapMarkers()" checked="checked" />
+   </div>
+  </div>
+
+  <div id="footer-bar">
+   <hr>
+   <p id="footer-status-bar"><span id="tou-link"><a href="#" onClick="showHelp('tou')">Paper Miner Terms of Use</a></span>
+  </div>
+  
+ </div>
+</div>
+</body>
+</html>

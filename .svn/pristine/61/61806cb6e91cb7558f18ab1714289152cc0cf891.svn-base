@@ -1,0 +1,41 @@
+
+<div id="curr-query">
+ <h3>Current Query Details</h3>
+ <p>&nbsp;
+ <table id="curr-query-form">
+  <tr>
+   <td class="td-name">Search Term:</td>
+   <td id="q11"></td>
+  </tr>
+  <tr>
+   <td class="td-name">Search Zone:</td>
+   <td id="z11"></td>
+  </tr>
+  <tr>
+   <td class="td-name">Result Total:</td>
+   <td id="n11"></td>
+  </tr>
+  <tr>
+   <td class="td-name">Retrieved:</td>
+   <td id="n12"></td>
+  </tr>
+  <tr>
+   <td class="td-name">Elapsed Time:</td>
+   <td id="n13"></td>
+  </tr>
+  <tr><td colspan="2"><hr class="pm-button-sep"></td></tr>
+  <tr>
+   <td colspan="2">
+    <div class="pm-button-bar">
+     <button id="cc-pb11" type="button" onClick="_processData(null, -2)">Pause query</button>
+     <button id="cc-pb13" type="button" onClick="newQuery(true)">Revise query</button>
+     <button id="cc-pb12" type="button" onClick="saveQuery(true, 'save-query-pane')">Save query</button>
+    </div>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<p>&nbsp;   
+ 
+ 

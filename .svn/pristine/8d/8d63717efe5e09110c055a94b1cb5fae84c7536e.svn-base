@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <display-name>Paper Miner</display-name>
+  <description>Paper Miner Servlet</description>
+  <!-- Define application level parameters -->
+  <context-param>
+    <param-name>server-name</param-name>
+    <param-value>@SERVER_NAME@</param-value>
+  </context-param>
+  <context-param>
+    <param-name>log4j-init-file</param-name>
+    <param-value>WEB-INF/classes/log4j.lcf</param-value>
+  </context-param>
+
+  <!-- Define application events listeners -->
+  <listener>
+    <listener-class>au.org.paperminer.main.PaperMinerListener</listener-class>
+  </listener>
+
+  <!--START: DEFINE ALL FILTERS-->
+  <filter>
+    <filter-name>UserFilter</filter-name>
+    <filter-class>au.org.paperminer.main.UserFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>MenuFilter</filter-name>
+    <filter-class>au.org.paperminer.main.MenuFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>PublisherFilter</filter-name>
+    <filter-class>au.org.paperminer.main.PublisherFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>LocationFilter</filter-name>
+    <filter-class>au.org.paperminer.main.LocationFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/add/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/opn/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/cls/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/vfy/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/mod/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/info/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/qsave/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/qdel/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>UserFilter</filter-name>
+    <url-pattern>/pm/qget/*</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+    <filter-name>MenuFilter</filter-name>
+    <url-pattern>/pm/men/*</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>PublisherFilter</filter-name>
+    <url-pattern>/pub/info/*</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>LocationFilter</filter-name>
+    <url-pattern>/loc/ref/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LocationFilter</filter-name>
+    <url-pattern>/loc/gs/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LocationFilter</filter-name>
+    <url-pattern>/loc/rm/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LocationFilter</filter-name>
+    <url-pattern>/loc/add/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LocationFilter</filter-name>
+    <url-pattern>/loc/ins/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LocationFilter</filter-name>
+    <url-pattern>/loc/q/*</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>PaperMiner</servlet-name>
+    <servlet-class>au.org.paperminer.main.PaperMinerServlet</servlet-class>
+    <init-param>
+      <param-name>jdbc.driver.class</param-name>
+      <param-value>@DB_DRIVER@</param-value>
+    </init-param>
+    <init-param>
+      <param-name>db.max.connections</param-name>
+      <param-value>@DB_POOL_MAX@</param-value>
+    </init-param>
+    <init-param>
+      <param-name>db.url</param-name>
+      <param-value>@DB_URL@</param-value>
+    </init-param>
+    <init-param>
+      <param-name>db.user</param-name>
+      <param-value>@DB_USER@</param-value>
+    </init-param>
+    <init-param>
+      <param-name>db.passwd</param-name>
+      <param-value>@DB_PASSWD@</param-value>
+    </init-param>  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>PaperMiner</servlet-name>
+    <url-pattern>/pm/*</url-pattern>
+  </servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>
+      index.html
+    </welcome-file>
+  </welcome-file-list>
+
+</web-app>

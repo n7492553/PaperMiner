@@ -1,0 +1,25 @@
+ <h3>Stored Queries</h3>
+
+<div id="stored-queries">
+ <table id="qstore-table"></table>
+</div>
+
+<div id="save-query" class="hidden">
+ <table id="qstore-table">
+  <tr><td><span class="sub-header">Save Query</span></td><td></td></tr>
+  <tr>
+   <td>Description:</td>
+   <td><input id="qd1" type="text"/></td>
+  </tr>
+  <tr><td colspan="2"><hr class="pm-button-sep"></td></tr>
+  <tr>
+   <td></td><td>
+    <div class="pm-button-bar">
+     <button id="sq-pb14" onClick="saveQuery(true, 'can')">Cancel</button>
+     <button id="sq-pb15" onClick="saveQuery(true, null)" >Save</button>
+    </td>
+  </tr>
+ </table>
+</div>
+
+<p>&nbsp;   

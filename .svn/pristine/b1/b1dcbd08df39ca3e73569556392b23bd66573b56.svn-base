@@ -1,0 +1,384 @@
+<!--  *************************** DO NOT MODIFY THIS FILE ***************************  -->
+<!--  Make changes in the conf/build.xml.in image, then regenerate with configure.xml  -->
+
+
+<!--
+* Stand-alone (ie non-IDE) Ant Build script for the Paper Miner Project
+ * "clean" removes all traces of a build
+ * Use "test.run" to execute the JUnit tests
+ * "war" updates changes and creates distribution
+ * "deploy.local" for all the above, plus copy web archive(s) to the "local" tomcat.
+ * "javadoc" (re)builds and creates doco
+ * "app" compiles Servlet Java sources
+ * "util" compiles Utility Java sources.
+ *
+ * RC 2013-01-07
+-->
+
+<project name="PaperMiner" default="all" basedir=".">
+
+  <!-- include "local" environment settings -->
+  <property environment="env"/>
+
+  <!-- IF -->
+  <condition property="hostname" value="${env.HOSTNAME}">
+    <isset property="env.HOSTNAME" />
+  </condition>
+  <!-- ELSE -->
+  <property name="hostname" value="localhost" />
+
+
+
+<!-- Build globals -->
+  <property name="include.debug" value="on" />
+  <property name="build" value="classes" />
+  <property name="package.path" value="au/au/org/paperminer" />
+  <property name="src.dir" value="src" />
+  <property name="dat.dir" value="dat" />
+  <property name="web.dir" value="WebContent" />
+  <property name="javadocs" value="docs/api" />
+  <property name="war.image" value="build/war" />
+  <property name="app.name" value="PaperMiner" />
+  <property name="war.file" value="@WAR_FILE@.war" />
+  <property name="war.props" value="${war.image}/WEB-INF/classes/conf/preferences.xml" />
+
+  <!-- Library paths -->
+  <property name="lib.dir" value="lib" />
+  <property name="mysql-connector.lib.dir"  value="${lib.dir}/mysql-connector" />
+  <property name="mysql.connector" value="${mysql-connector.lib.dir}/mysql-connector-java-5.1.22-bin.jar" />
+
+  
+  <property name="tomcat-lib-dir" value="@TOMCAT_LIB_DIR@" />
+  <property name="deploy.target" value="@CATALINA_HOME_DIR@/webapps" />
+
+  <property name="ppk" value="/Users/Ron/.ssh/id_dsa" />
+  <property name="dev-scp-user" value="chernich" />
+  <property name="dev-scp-host" value="paperminer2.qern.qcif.edu.au" />
+  <property name="dev-deploy-dir" value="/var/lib/tomcat7/webapps" />
+  <property name="prod-scp-user" value="chernich" />
+  <property name="prod-scp-host" value="paperminer1.qern.qcif.edu.au" />
+  <property name="prod-deploy-dir" value="/var/lib/tomcat7/webapps" />
+  <property name="local-scp-user" value="xchernich" />
+  <property name="local-scp-host" value="redactor" />
+  <property name="local-deploy-dir" value="/opt/local/stow/apache-tomcat-7.0.16/webapps" />
+
+  <path id="build.classes">
+    <pathelement location="classes" />
+    <fileset dir="lib">
+      <!-- apache libraries -->
+      <include name="mail.jar"/>
+      <include name="log4j-1.2.17.jar"/>
+      <include name="commons-pool-1.6.jar"/>
+      <include name="commons-dbcp-1.4.jar"/>
+      <include name="json_simple-1.1.jar"/>
+      <!-- junit libraries  -->
+      <include name="junit.jar" />
+    </fileset>
+  </path>
+
+  <property name="build.classes.echo" refid="build.classes"/>
+
+  <!--  Props control destination for deploy.local  -->
+  <available file="/opt/local/stow" type="dir" property="osx" />
+  <available file="/var/lib/tomcat7" type="dir" property="ubuntu" />
+
+
+  <target name="init">
+    <available file="build" type="dir"
+               property="build.dir.exists" />
+   
+  </target>
+
+  <target name="clean" depends="init"
+          description="Removes all traces of builds">
+    <delete dir="${war.image}" />
+    <delete dir="classes" />
+    <delete dir="build" />
+    <delete dir="tmp" />
+    <delete dir="${javadocs}" />
+  </target>
+
+  <!--    delete and create directories no part of SVN archive    -->
+  <target name="mkdirs" depends="init">
+    <mkdir dir="build" />
+    <mkdir dir="classes" />        <!-- holds compiled classes and images -->
+    <mkdir dir="tmp" />            <!-- mock deploy env for JUnit tests   -->
+    <mkdir dir="tmp/log" />
+    <mkdir dir="tmp/data" />
+    <mkdir dir="tmp/PaperMiner" />
+    <mkdir dir="tmp/WEB-INF" />
+    <mkdir dir="tmp/WEB-INF/classes" />
+    <mkdir dir="tmp/WEB-INF/classes/conf" />
+    <mkdir dir="${war.image}" />
+    <mkdir dir="${war.image}/js" />
+    <mkdir dir="${war.image}/css" />
+    <mkdir dir="${war.image}/css/images" />
+    <mkdir dir="${war.image}/logs" />
+    <mkdir dir="${war.image}/images" />
+    <mkdir dir="${war.image}/META-INF" />
+    <mkdir dir="${war.image}/WEB-INF" />
+    <mkdir dir="${war.image}/WEB-INF/dat" />
+    <mkdir dir="${war.image}/WEB-INF/lib" />
+    <mkdir dir="${war.image}/WEB-INF/classes" />
+    <mkdir dir="${war.image}/WEB-INF/classes/conf" />
+  </target>
+  
+  <target name="configure.about" depends="mkdirs">
+    <tstamp>
+      <format property="touch.time" pattern="yyyy-MM-dd HH:mm" />
+    </tstamp>
+    
+    <exec executable="cat" outputproperty="pm.version">
+        <arg line="version.txt" />
+    </exec>
+    <exec executable="svn" output="/tmp/svninfo.xml" failonerror="true">
+         <arg line="info --xml" />
+    </exec>
+    
+    <xmlproperty file="/tmp/svninfo.xml" collapseattributes="true" />
+    <echo message="Build: ${pm.version} ${info.entry.commit.revision}" />
+    <echo message=" Date: ${touch.time}" />
+    
+    <copy todir="${war.image}/WEB-INF/dat">
+      <fileset dir="${dat.dir}">
+        <include name="help-about.txt" />
+      </fileset>
+    </copy>
+    <replace file="${war.image}/WEB-INF/dat/help-about.txt"
+      token="@REVISION@" value="${info.entry.commit.revision}" />
+    <replace file="${war.image}/WEB-INF/dat/help-about.txt"
+      token="@VERSION@" value="${pm.version}" />
+    <replace file="${war.image}/WEB-INF/dat/help-about.txt"
+      token="@DATE@" value="${touch.time}" />
+  </target>
+
+  <!--    copy static files from versioned locations to work dirs -->
+  <target name="copy.static" depends="mkdirs">
+ 
+    <copy todir="${war.image}/WEB-INF/lib">
+      <fileset dir="lib">
+        <include name="mail.jar"/>
+        <include name="log4j-1.2.17.jar"/>
+        <include name="commons-pool-1.6.jar"/>
+        <include name="commons-dbcp-1.4.jar"/>
+        <include name="json_simple-1.1.jar"/>
+        <include name="mysql-connector-java-5.1.22-bin.jar"/>
+      </fileset>
+    </copy>
+  
+    <!-- INDEX HTML PAGES AND HTML FRAGMENTS (txt) -->
+    <copy todir="${war.image}">
+      <fileset dir="${web.dir}">
+        <include name="index.html" />
+        <include name="favicon.ico" />
+      </fileset>
+    </copy>
+    <copy todir="${war.image}/WEB-INF/dat">
+      <fileset dir="${dat.dir}">
+        <include name="*.txt" />
+        <exclude name="help-about.txt" />
+      </fileset>
+    </copy>
+    
+    <replace file="${war.image}/index.html"
+      token="@PM_BASE@" value="@INDEX_BASE@" />
+    
+
+    <!-- IMAGES -->
+    <copy todir="${war.image}/images">
+      <fileset dir="${web.dir}/images">
+        <include name="*.gif" />
+        <include name="*.png" />
+        <include name="*.jpg" />
+      </fileset>
+    </copy>
+
+    <!-- STYLESHEETS -->
+    <copy todir="${war.image}/css">
+      <fileset dir="${web.dir}/css">
+        <include name="*.css" />
+      </fileset>
+    </copy>
+    <copy todir="${war.image}/css/images">
+      <fileset dir="${web.dir}/css/images">
+        <include name="*.png" />
+      </fileset>
+    </copy>
+
+    <!-- SCRIPTS -->
+    <copy todir="${war.image}/js">
+      <fileset dir="${lib.dir}">
+        <include name="jquery-*.js" />
+      </fileset>
+      <fileset dir="${web.dir}/js">
+        <include name="*.js" />
+      </fileset>
+    </copy>
+    
+    <!-- webapp deploy path -->
+    <replace file="${war.image}/js/pm.js"
+      token="@PM_PREFIX@" value="@URI_PREFIX@" />
+    
+
+    <!-- XML CONF FILES -->
+    <copy file="conf/web.xml.in" tofile="${war.image}/WEB-INF/web.xml" />
+    <replace file="${war.image}/WEB-INF/web.xml"
+      token="@DB_URL@" value="jdbc:mysql://localhost/paperminer" />
+    <replace file="${war.image}/WEB-INF/web.xml"
+      token="@DB_USER@" value="pmpool" />
+    <replace file="${war.image}/WEB-INF/web.xml"
+      token="@DB_PASSWD@" value="SecretSanta7" />
+    <replace file="${war.image}/WEB-INF/web.xml"
+      token="@DB_DRIVER@" value="com.mysql.jdbc.Driver" />
+    <replace file="${war.image}/WEB-INF/web.xml"
+      token="@DB_POOL_MAX@" value="5" />
+    <replace file="${war.image}/WEB-INF/web.xml"
+      token="@DEBUG@" value="true" />
+    <replace file="${war.image}/WEB-INF/web.xml"
+      token="@SERVER_NAME@" value="@DEPLOY_HOST@" />
+    
+    <copy todir="${war.image}/META-INF">
+      <fileset dir="${web.dir}/META-INF">
+        <include name="MANIFEST.MF" />
+      </fileset>
+    </copy>
+    <depend closure="yes" srcdir="${src.dir}"
+            destdir="${build}" classpathref="build.classes" />
+  </target>
+
+  <!--          Prepare build dirs (etc) for compilation          -->
+  <target name="prepare" depends="mkdirs, copy.static" />
+
+  <!--          Compile application classes                       -->
+  <target name="app" depends="prepare, configure.about">
+   <javac
+      debug="${include.debug}"
+      srcdir="${src.dir}"
+      destdir="${build}"
+      deprecation="true"
+      target="7"
+      includeantruntime="false"
+      classpathref="build.classes">
+      <classpath>
+        <pathelement path="${tomcat-lib-dir}/servlet-api.jar"/>
+      </classpath>
+      <exclude name="**/util/*" />
+    </javac>
+  </target>
+  
+  <!--          Compile Utility classes                       -->
+  <target name="util" depends="prepare, configure.about">
+   <javac
+      debug="${include.debug}"
+      srcdir="${src.dir}"
+      destdir="${build}"
+      deprecation="true"
+      target="7"
+      includeantruntime="false"
+      classpathref="build.classes">
+      <exclude name="**/db/*" />
+      <exclude name="**/main/*" />
+      <exclude name="**/common/*" />
+    </javac>
+  </target>
+  
+  <!--      Builds the WAR file                    -->
+  <target name="war" depends="app"
+          description="Build Distribution War file" >
+          
+    <delete file="build/${war.file}" />
+    <delete dir="${war.image}/WEB-INF/classes/au" />
+    
+    <copy
+      todir="${war.image}/WEB-INF/classes">
+      <fileset dir="classes">
+        <include name="au/**" />
+      </fileset>
+    </copy>
+    
+    <copy file="conf/logging.properties.in"
+          tofile="${war.image}/WEB-INF/classes/log4j.lcf"
+          overwrite="true" />
+    <replace file="${war.image}/WEB-INF/classes/log4j.lcf"
+      token="@MAX_LOG_SIZE@" value="500KB" />
+    <replace file="${war.image}/WEB-INF/classes/log4j.lcf"
+      token="@MAX_FILES@" value="2" />
+    <replace file="${war.image}/WEB-INF/classes/log4j.lcf"
+      token="@LEVEL@" value="DEBUG" />
+    
+    <copy file="conf/poolconf.jocl.in" 
+          tofile="${war.image}/WEB-INF/classes/poolconf.jocl"
+          overwrite="true" />
+    <replace file="${war.image}/WEB-INF/classes/poolconf.jocl"
+      token="@DB_URL@" value="jdbc:mysql://localhost/paperminer" />
+
+    <jar
+      destfile="build/${war.file}"
+      excludes="WEB-INF/classes/au/org/paperminer/test/**,
+                WEB-INF/classes/au/org/paperminer/util/**"
+      basedir="${war.image}">
+    </jar>
+  </target>
+
+  <target name="javadoc" depends="app" >
+    <delete dir="doc/api" />
+    <javadoc
+      packagenames="au.org.paperminer.*"
+      sourcepath="${src.dir}"
+      defaultexcludes="yes"
+      includeantruntime="false"
+      destdir="${javadocs}"
+      author="true"
+      version="true"
+      use="true"
+      source="5"
+      classpathref="build.classes"
+      additionalparam="-breakiterator"
+      windowtitle="Annotea API">
+      <classpath>
+        <pathelement path="${javaee.lib.dir}/servlet-api.jar"/>
+      </classpath>
+      <doctitle>
+        <![CDATA[<h1>PaperMiner</h1>]]>
+      </doctitle>
+      <bottom>
+       <![CDATA[<i>Copyright &#169; 2013 University of Queensland. All Rights Reserved.</i>]]>
+      </bottom>
+      <tag name="todo" scope="all" description="To do:" />
+      <link offline="true"
+            href="http://java.sun.com/products/jdk/1.5/docs/api/"
+            packagelistLoc="/tmp"/>
+    </javadoc>
+  </target>
+
+  <target name="test" depends="init">
+  </target>
+  
+  <target name="deploy.local" depends="war">
+    <antcall target="deploy.osx" />
+    <antcall target="deploy.ubuntu" />
+  </target>
+
+  <target name="deploy.osx" if="osx">
+    <echo message="${hostname} deploying on OSX" />
+    <scp file="build/${war.file}" todir="${local-scp-user}@${local-scp-host}:${local-deploy-dir}" keyfile="${ppk}" />
+  </target>
+
+  <target name="deploy.ubuntu" if="ubuntu">
+    <echo message="${hostname} deploying on Ubuntu" />
+    <copy file="build/${war.file}" tofile="/var/lib/tomcat7/webapps/${war.file}" />
+  </target>
+
+  <target name="deploy.dev" depends="war">
+    <scp file="build/${war.file}" todir="${dev-scp-user}@${dev-scp-host}:${dev-deploy-dir}" keyfile="${ppk}" />
+  </target>
+
+  <target name="deploy.prod" depends="war">
+    <scp file="build/${war.file}" todir="${prod-scp-user}@${prod-scp-host}:${prod-deploy-dir}" keyfile="${ppk}" />
+  </target>
+
+
+
+  <target name="all" depends="app,test,war" />
+
+</project>

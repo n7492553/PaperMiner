@@ -1,0 +1,17 @@
+<h2>Paper Miner</h2>
+<div align="center">
+<table class="about">
+ <tr><td class="td-name">Version:</td><td class="td-val">@VERSION@</td></tr>
+ <tr><td class="td-name">Build:</td><td class="td-val">@REVISION@</td></tr>
+ <tr><td class="td-name">Created:</td><td class="td-val">@DATE@</td></tr>
+ <tr><td colspan="2"><hr></td></tr>
+ <tr><td colspan="2"><p>Paper Miner is a wrapper around the Australian National Library
+ <a href="http://trove.nla.gov.au" target="_blank">TROVE</a> service,
+ adding value by providing additional visualizations of TROVE search results,
+ including geospatial data based on extensive data mining of the raw TROVE data.
+ 
+ <p>Paper Miner is standards based and requires that your web browser support Javascript.
+ It works best with Google Chrome, Mozilla Firefox, and Apple Safari.
+ It probably won't work at all with any version of Internet Explorer.
+</table>
+</div>

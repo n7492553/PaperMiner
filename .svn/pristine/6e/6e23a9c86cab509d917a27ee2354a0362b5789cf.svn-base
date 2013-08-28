@@ -1,0 +1,25 @@
+<div id="user-dlg">
+
+<form id="usr-selector" action="">
+ <div align="center">
+  <br>I am a: &nbsp;
+  <input type="radio" name="usr-rb" value="old" checked="true" onChange="doLogin('ret')" > Returning User </input>
+  &nbsp; &nbsp;
+  <input type="radio" name="usr-rb" value="new" onChange="doLogin('new')" /> New User
+ </div>
+</form>
+<br>&nbsp;
+<form id="usr-info" action="">
+ <table>
+  <tr>
+   <td>My eMail address:</td><td><input id="em" type="text" /></td>
+  </tr>
+  <tr id="trove-key" class="hidden">
+   <td>My TROVE API Key:</td><td><input id="tk" type="text"/></td>
+  </tr>
+ </table>
+ <br><span id="agree-opt" class="hidden"><input id="cb-agree"  type="checkbox" value="agree"  /> I have read and agree to the <a href="#" onCLick="showHelp('tou')">Terms of Use</a>.</span>
+ <br><span id="vfy-opt"   class="hidden"><input id="cb-vfy"    type="checkbox" value="verify" /> Verify my eMail Address.</span>
+</form>
+
+</div>

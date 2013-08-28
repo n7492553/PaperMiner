@@ -1,0 +1,26 @@
+<div id="help-trove" class="help">
+
+<p>&nbsp;
+
+<h2>TROVE</h2>
+
+<p>TROVE is a service provided by <a href="http://trove.nla.gov.au/" target="_blank">The National Library of Australia</a> which allows the general public to search an
+extensive collection of resources using simple key-words, or more sophisticated query constructs. TROVE contains eight (8) "zones", including 
+Australian newspapers from the early days of the colony of Australia, up until a date in the 1950's when copyright restrictions apply. To enable
+text searching, the articles have been converted to text using Optical Character Recognition (OCR). This ability of OCR software to correctly
+convert images of newspapers to text is largely limited by the quality of the image, and to a lesser extent by the typeface used. The TROVE
+designers accept that this process will produce frequent OCR errors ('o' for 'e' is very common), but mitigate the problem by allowing readers
+to make corrections the the OCR text and update the stored records. These "crowd-sourced" corrections are immediately made available to all,
+gradually improving the quality of the converted text for the benefit of all.</p>
+
+<h2>TROVE API Key</h2>
+<p>To further enhance the usability of TROVE, the designers have made available a HTML based Application Programming Interface (API) which allows
+the service to be incorporated into systems designed by third parties. As any request/response service which has an API becomes susceptible to
+degradation through heavy use, users of the API are required to obtain a "key" which must be passed to TROVE with each request. This allows the
+TROVE server to track users and prevent an individual API user from making excessive requests, thus impacting all users. To obtain a TROVE API Key,
+create a <a href="https://trove.nla.gov.au/signup" target="_blank">TROVE User Account</a>, then follow 
+<a href="http://trove.nla.gov.au/general/api" target="_blank">these instructions</a>.</p>
+
+<p>&nbsp;
+
+</div>

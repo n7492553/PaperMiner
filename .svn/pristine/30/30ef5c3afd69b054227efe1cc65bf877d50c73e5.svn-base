@@ -1,0 +1,37 @@
+<div id="contact-pane" class="help">
+
+<p>&nbsp;
+
+<h1>Contacting the Paper Miner Administrator</h1>
+
+<p>The PaperMiner project is provided on a best efforts basis. Before advising us of any technical issues with PaperMiner please check that Trove itself is available.
+For any support issues not covered by the help documentation or for general information on the PaperMiner project, please email: 
+<div class="indent">
+ <a href="mailto:paperminer@smartservicescrc.com.au" target="_blank">paperminer@smartservicescrc.com.au</a>
+</div>
+<p>We welcome feedback and suggestions for future releases.
+<br>The PaperMiner project is managed by the Smart Services CRC. Our general contact details are:
+
+<div class="indent">
+ <p>Website:
+ <br>Phone: + 61 2 8374 5080
+ <br>Fax: + 61 2 8374 5090 
+ <br>Email: <a href="mailto:info@smartservicescrc.com.au" target="_blank">info@smartservicescrc.com.au</a>
+</div>
+
+<p>We ask that you read the <a href="#" onCLick="showHelp('rel')">Current Release Notes</a> before requesting assistance. If reporting a suspected defect, please
+follow the following guidelines:
+<ol>
+ <li>Make sure the problem is reproducable. If you can't make it happen again, we are unlikely to either!</li>
+ <li>Describe explicitly the steps required to reproduce the problem.</li>
+ <li>Tell us what Operating System and version you are running
+     <br>(eg, Windows XP-SP3, OS-X 10.8.3, etc).</li>
+ <li>Tell us which web browser you used when you experienced the problem, and the version
+     <br>(eg, Google Chrome 25.0.1364.172, etc).</li>
+ <li>Anything else you can think of which may help us to help you (eg, the query terms, etc).</li>
+ <li>Your Paper Miner user/email name (if different from the account you are using to email us).</li>
+</ol>
+
+<p>&nbsp;
+
+</div>

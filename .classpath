@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="classes" path="src"/>
+	<classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+	<classpathentry kind="con" path="/home/dev/workspace/PaperMiner/classes"/>
+	<classpathentry kind="lib" path="/home/dev/workspace/PaperMiner/lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="/home/dev/workspace/PaperMiner/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="/home/dev/workspace/PaperMiner/lib/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/dev/workspace/PaperMiner/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/home/dev/workspace/PaperMiner/lib/mail.jar"/>
+	<classpathentry kind="lib" path="/usr/share/tomcat7/lib/servlet-api.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
